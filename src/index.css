@@ -1,0 +1,123 @@
+body {
+  background-color: #f9f9f9 !important;
+}
+
+.img {
+  width: 100px;
+  display: block;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.imgB {
+  border: 2px solid #f50;
+}
+
+.icon {
+  font-size: 14px;
+  margin: 0 4px;
+  color: #f8da48;
+}
+
+.btnW,
+.btnB {
+  margin: 0 7px;
+  background-color: #fff;
+  border-radius: 60px;
+  padding: 10px;
+  border: 0;
+  border: 1px solid #f6f6f6;
+}
+
+.btnW:focus,
+.btnB:focus {
+  outline: none;
+}
+
+.clc {
+  border: 1px solid #cf9833 !important;
+  color: #cf9833;
+}
+
+.btnM {
+  margin: 0 7px;
+  background-color: #fff;
+  border-radius: 60px;
+  padding: 10px 20px;
+  border: 0;
+  border: 1px solid #f6f6f6;
+}
+
+.bkw {
+  background-color: #fff;
+  padding: 1.4rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+}
+
+.btnadd {
+  border-radius: 60px;
+  padding: 10px;
+  border: 0;
+  background: #cf9833;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.btnIn {
+  position: relative;
+}
+
+.inp {
+  border: 1px solid #cf9833 !important;
+  border-radius: 60px !important;
+  text-align: center;
+  padding: 1.2rem 0 !important;
+}
+
+.inp:focus {
+  outline: none;
+}
+
+.inc,
+.dec {
+  position: absolute;
+  color: #ccc;
+}
+
+.inc {
+  bottom: 10%;
+  right: 15%;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.dec {
+  bottom: 10%;
+  left: 15%;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.heart {
+  font-size: 2rem;
+  border: 1px solid #ccc;
+  color: #444;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+
+.cach {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.pay,
+.more {
+  font-size: 15px;
+}
+
+.more {
+  color: #cf9833;
+}

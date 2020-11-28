@@ -2,12 +2,13 @@ import React from "react";
 import Product from "../images/1.png";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsFillStarFill } from "react-icons/bs";
-import { FcDvdLogo } from "react-icons/fc";
+import { FaCcPaypal,FaCcVisa } from "react-icons/fa";
+import { RiVisaFill, RiVisaLine } from "react-icons/ri";
 function SingleProduct() {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-12 col-md-6 p-5 align-self-center">
+    <div className="container mx-auto">
+      <div className="row mx-0">
+        <div className="col-12 col-md-6 align-self-center mx-0 single1">
           <div className="icons text-right">
             <BsFillStarFill className="icon" />
             <BsFillStarFill className="icon" />
@@ -30,7 +31,7 @@ function SingleProduct() {
             <button className="btnM clc">37</button>
             <h6 className="mb-0 pb-0 align-self-center">المقاس</h6>
           </div>
-          <div className="d-flex  justify-content-center  bkw">
+          <div className="d-flex  justify-content-center bkw">
             <div className="px-2">
               <h2>$329.99</h2>
             </div>
@@ -46,22 +47,24 @@ function SingleProduct() {
               <AiOutlineHeart className="heart" />
             </div>
           </div>
+          <h6 className="text-right pt-3 text-muted">التوصيل مجانا</h6>
           <div className="text-right mt-3">
             <span className="pay">الدفع</span>
-            <FcDvdLogo className="cach" />
-            <FcDvdLogo className="cach" />
-            <FcDvdLogo className="cach" />
-            <FcDvdLogo className="cach" />
-            <FcDvdLogo className="cach" />
-            <FcDvdLogo className="cach" />
-            <FcDvdLogo className="cach" />
+            <RiVisaLine className="cach" />
+            <FaCcPaypal className="cach" />
+            <FaCcPaypal className="cach" />
+            <FaCcVisa className="cach" />
+            <FaCcVisa className="cach" />
+            <RiVisaFill className="cach" />
+            <RiVisaFill className="cach" />
             <span className="more">المزيد</span>
           </div>
         </div>
-        <div className="col-12 col-md-6 d-flex p-4">
-          <img src={Product} className="img-fluid" alt="Product" />
-          <div>
+        <div className="col-12 col-md-6 d-flex mx-auto single mb-3">
+          <img src={Product} className=" w-100 d-block" alt="Product" />
+          <div className="rowking mb-3">
             <img src={Product} className="img imgB" alt="Product" />
+            <img src={Product} className="img" alt="Product" />
             <img src={Product} className="img" alt="Product" />
             <img src={Product} className="img" alt="Product" />
             <img src={Product} className="img" alt="Product" />

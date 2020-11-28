@@ -33,7 +33,7 @@ function SingleProduct() {
           </div>
           <div className="d-flex  justify-content-center bkw">
             <div className="px-2">
-              <h2>$329.99</h2>
+              <h2 className="h2p">$329.99</h2>
             </div>
             <div className="btnIn px-2">
               <button className="d-block w-100 btnadd">

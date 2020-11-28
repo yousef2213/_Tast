@@ -18,7 +18,9 @@ function Products() {
                   <BsFillStarFill className="iconP" />
                 </div>
                 <h6 className="nameP">{name}</h6>
-                <h6 className="priceP"> ${price} <span className="text-muted">$133 </span></h6>
+                <h6 className="priceP">
+                  ${price} <span className="text-muted">$133 </span>
+                </h6>
               </div>
             </div>
           );

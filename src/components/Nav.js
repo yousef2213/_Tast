@@ -2,9 +2,9 @@ import React from "react";
 
 function Nav() {
   return (
-    <div className="container mx-auto p-0">
+    <div className="container mx-auto p-0 mt-5">
       <div className="row">
-        <div className="col-12 mx-auto pr-0 mr-0 ml-auto pl-auto">
+        <div className="col-12 w-100">
           <div className="nav justify-content-end">
             <ul className="nav-bar ml-auto mt-4">
               <li className="li">التعليقات(1)</li>

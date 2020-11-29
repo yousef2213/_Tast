@@ -2,8 +2,6 @@ import React from "react";
 import Product from "../images/1.png";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsFillStarFill } from "react-icons/bs";
-import { FaCcPaypal, FaCcVisa } from "react-icons/fa";
-import { RiVisaFill, RiVisaLine } from "react-icons/ri";
 import Visa from "../images/pay/visa.png";
 import MestarCard from "../images/pay/mastercard.png";
 import Paypal from "../images/pay/paypal.png";

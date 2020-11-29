@@ -82,15 +82,15 @@ function CheckoutComponent() {
                         <img src={ImgTest} className="img_order_1" alt="img" />
                       </div>
                       <div>
-                        <h6 className="font-main mb-0 font-weight-bold text-right">
+                        <h6 className="font-main mb-0 font-weight-bold text-right textmyoe">
                           {name}
                         </h6>
-                        <h6 className="font-main mb-0 font-weight-bold text-right">
+                        <h6 className="font-main mb-0 font-weight-bold text-right textmyoe2">
                           {amount}
                         </h6>
                       </div>
                       <div className="price_order">
-                        <h5>$200.32</h5>
+                        <h5 className="textmyoe">$200.32</h5>
                       </div>
                     </div>
                     <hr className="w-100 m-0 px-0" />
@@ -99,16 +99,16 @@ function CheckoutComponent() {
               })}
               <div className="d-flex justify-content-between px-4 pt-4 pb-2">
                 <h5 className="font-main">سعر الشراء</h5>
-                <h4 className="font-main font-weight-bold">$200.32</h4>
+                <h4 className="font-main font-weight-bold textmyoe1">$200.32</h4>
               </div>
               <div className="d-flex justify-content-between p-4">
                 <h5 className="font-main">التوصيل</h5>
-                <h4 className="font-main font-weight-bold">$3.99</h4>
+                <h4 className="font-main font-weight-bold textmyoe1">$3.99</h4>
               </div>
               <hr className="w-100 m-0 px-0" />
               <div className="d-flex justify-content-between p-4">
                 <h3 className="font-main">الاجمالي</h3>
-                <h4 className="font-main font-weight-bold">$3.99</h4>
+                <h4 className="font-main font-weight-bold textmyoe1">$3.99</h4>
               </div>
             </div>
 

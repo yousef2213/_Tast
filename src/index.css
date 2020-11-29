@@ -637,9 +637,16 @@ td {
   .arroleft,.arroright{
     top: 6%;
   }
-  .img-Coarousl {
-    max-height: 800px;
-  }
+.textmyoe{
+  font-size: 14px;
+}
+.textmyoe1{
+  font-size: 20px;
+}
+.textmyoe2{
+  font-size: 12px;
+  margin-top: 5px;
+}
 }
 
 .div_section_2 {

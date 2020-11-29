@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="container-fluid footer pt-3 mx-0">
-      <div className="row mx-auto pt-3 px-3 pt-3">
+      <div className="row mx-auto pt-3 px-3 py-5">
         <div className="col-12 col-md-4 p-3 text-right">
           <h6 className="font-main">اشترك لمتابعتنا</h6>
           <p className="font-main">
@@ -29,7 +29,7 @@ function Footer() {
               <FiSend className="icon_Search_Footer" />
             </div>
           </div>
-          <div className="mt-2">
+          <div className="mt-4">
             <BsWifi className="fa-footer" />
             <AiFillYoutube className="fa-footer" />
             <AiOutlineTwitter className="fa-footer" />

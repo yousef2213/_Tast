@@ -8,7 +8,9 @@ body {
   background-color: #f9f9f9 !important;
   direction: rtl !important;
 }
-
+.C_p {
+  cursor: pointer;
+}
 button:focus {
   outline: none !important;
 }
@@ -516,6 +518,9 @@ td {
   text-align: right;
 }
 
-.listicon{
+.listicon {
   font-size: 1.8rem;
+}
+.awl {
+  font-size: 1rem !important;
 }

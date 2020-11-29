@@ -15,11 +15,13 @@ function SingleProductPage() {
       <Comments />
       <div className="mb-5">
         <div className="container">
-        <div className="row py-3">
-          <div className="col-12">
-          <h4 className="text-right font-main font-weight-bold">شاهد ايضا</h4>
+          <div className="row py-3">
+            <div className="col-12">
+              <h4 className="text-right font-main font-weight-bold">
+                شاهد ايضا
+              </h4>
+            </div>
           </div>
-        </div>
         </div>
         <Products />
       </div>

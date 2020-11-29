@@ -49,17 +49,16 @@ function Navbar() {
 
           <div className="col-12">
             <nav className="navbar navbar-expand-lg navbar-light Nav">
-            <Link
-                className="navbar-brand font-main Sections mr-0 my-0 py-2 d-flex justify-content-around"
-                to="/"
+            <h5
+                className="navbar-brand font-main Sections mr-0 my-0 py-2 d-flex justify-content-around C_p awl"
                 data-toggle="collapse"
                 data-target="#navbarNav"
                 aria-controls="navbarNav"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <BsList className="listicon" /> <span>الأقسام</span>
-              </Link>
+                <BsList className="listicon" /> <span className="aksam">الأقسام</span>
+              </h5>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mx-auto">
                   <li className="nav-item active">

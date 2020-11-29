@@ -9,6 +9,7 @@ import Paypal from "../images/pay/paypal.png";
 import Maestro from "../images/pay/maestro.png";
 import CardBanek from "../images/pay/cardBank.png";
 import Discove from "../images/pay/discover.ong.png";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="container-fluid footer pt-3 mx-0">
@@ -38,63 +39,63 @@ function Footer() {
         <div className="col-12 col-md-2">
           <ul className="text-right" style={{ listStyle: "none" }}>
             <li className="d-inline-block py-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 حسابي
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 الملف الشخصي
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 سلة المشتريات
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 المفضلة
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/SingleProduct">
+              <Link className="afooter" to="/SingleProduct">
                 طلباتي
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className="col-12 col-md-2">
           <ul className="text-right" style={{ listStyle: "none" }}>
             <li className="d-inline-block py-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 روابط سريعة
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 الاشتراكات
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 تسجيل الدخول
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 الرثيسية
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/Merchants">
+              <Link className="afooter" to="/Merchants">
                 التجار
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 المنتجات
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -102,34 +103,34 @@ function Footer() {
         <div className="col-12 col-md-2">
           <ul className="text-right" style={{ listStyle: "none" }}>
             <li className="d-inline-block py-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 المعلومات والخصوصية
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 سياسة الخصوصية
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 خصوصية التجار
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 خصوصية المعارض
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 سياسة الاسترجاع
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 سياسة الدفع
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -137,14 +138,14 @@ function Footer() {
         <div className="col-12 col-md-2">
           <ul className="text-right" style={{ listStyle: "none" }}>
             <li className="d-inline-block py-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 اتصل بنا
-              </a>
+              </Link>
             </li>
             <li className="pb-2">
-              <a className="afooter" href="/">
+              <Link className="afooter" to="/">
                 01234456789
-              </a>
+              </Link>
             </li>
             <li className="pb-2 afooter">technical@support.com</li>
           </ul>

@@ -60,5 +60,7 @@
 }
 .all{
   color: #868686;
-  font-size: 13px;
+  font-size: 15px;
+  margin-bottom: 0;
+  align-self: center;
 }

@@ -334,7 +334,7 @@ td {
   font-family: "Tajawal", sans-serif;
   width: 100%;
 }
-.card_nav{
+.card_nav {
   color: #000 !important;
   font-size: 2rem;
 }
@@ -422,12 +422,9 @@ td {
   padding: 0rem 0rem !important;
 }
 
-
-
 /*  */
 
 @media (max-width: 500px) {
-
   .single,
   .single1 {
     padding: 0 !important;
@@ -501,8 +498,8 @@ td {
   .h2p {
     font-size: 15px;
   }
-  .div_section_2{
-    bottom: 15% !important;
+  .div_section_2 {
+    bottom: 20% !important;
   }
 }
 
@@ -514,8 +511,7 @@ td {
   margin: 0 auto;
 }
 
-.qafeer_logo{
+.qafeer_logo {
   width: 85%;
   text-align: right;
 }
-

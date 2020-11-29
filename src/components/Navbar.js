@@ -4,6 +4,7 @@ import { BiCartAlt } from "react-icons/bi";
 import { BsList } from "react-icons/bs";
 import "../style/Navbar.css";
 import Logo from "../images/qafeer-logo.png";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="container-fluid fir">
@@ -33,10 +34,10 @@ function Navbar() {
                   <span className="span33">33</span>
                 </div>
                 <div className=" Cart_Div">
-                  <a href="/Checkout" className="card_nav">
+                  <Link to="/Checkout" className="card_nav">
                     <BiCartAlt className="icon_" />
                     <span className="spancart">0</span>
-                  </a>
+                  </Link>
                 </div>
                 <div>
                   <h6 className="font-main mb-0">القفير</h6>
@@ -48,9 +49,9 @@ function Navbar() {
 
           <div className="col-12">
             <nav className="navbar navbar-expand-lg navbar-light Nav">
-              <a
+            <Link
                 className="navbar-brand font-main Sections mr-0 my-0 py-2 d-flex justify-content-around"
-                href="/"
+                to="/"
                 data-toggle="collapse"
                 data-target="#navbarNav"
                 aria-controls="navbarNav"
@@ -58,33 +59,33 @@ function Navbar() {
                 aria-label="Toggle navigation"
               >
                 <BsList /> <span>الأقسام</span>
-              </a>
+              </Link>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mx-auto">
                   <li className="nav-item active">
-                    <a className="nav-link text-center" href="/">
+                    <Link className="nav-link text-center" to="/">
                       الرئيسية
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-center" href="/Merchants">
+                    <Link className="nav-link text-center" to="/Merchants">
                       التجار
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-center" href="/">
+                    <Link className="nav-link text-center" to="/">
                       المعارض
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-center" href="/">
+                    <Link className="nav-link text-center" to="/">
                       الصفحات العاجلة
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-center" href="/">
+                    <Link className="nav-link text-center" to="/">
                       تواصل معنا
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

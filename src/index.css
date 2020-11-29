@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap");
+
+.font-main {
+  font-family: "Tajawal", sans-serif !important;
+}
+
 body {
   background-color: #f9f9f9 !important;
+  direction: rtl !important;
 }
 
 button:focus {
@@ -11,7 +18,7 @@ button:focus {
 }
 
 .img {
-width: 80px;
+  width: 80px;
   display: block;
   margin: 1rem 0;
   cursor: pointer;
@@ -130,6 +137,8 @@ width: 80px;
 
 .more {
   color: #cf9833;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* nav-bar */
@@ -252,18 +261,22 @@ td {
 .Product {
   width: 100%;
 }
+
 .single1,
 .single {
   padding: 3rem;
   position: relative;
 }
+
 .PersonsDC {
   display: flex;
   justify-content: space-between;
 }
+
 .Test {
   display: flex;
 }
+
 .DivImg {
   width: 110px;
   height: 110px;
@@ -279,6 +292,7 @@ td {
   border-radius: 50%;
   justify-content: center;
 }
+
 .Person {
   color: transparent;
   width: 100%;
@@ -288,45 +302,220 @@ td {
   text-indent: 10000px;
 }
 
+.btn_more {
+  width: 100%;
+  margin-top: 1rem;
+  border: 0;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Nav */
+.fir {
+  box-shadow: 0px 0px 10px #ccc !important;
+}
+.logo {
+  align-self: center;
+  width: 14%;
+}
+.input {
+  position: relative;
+  width: 50%;
+  align-self: center;
+}
+.input_Search {
+  position: relative;
+  padding: 10px;
+  border: 0;
+  border: 1px solid #f6f6f6;
+  border-radius: 40px;
+  font-family: "Tajawal", sans-serif;
+  width: 100%;
+}
+.card_nav{
+  color: #000 !important;
+  font-size: 2rem;
+}
+.input_Search::placeholder {
+  font-family: "Tajawal", sans-serif;
+}
+.input_Search:focus {
+  outline: none;
+}
+
+.icon_Search {
+  position: absolute;
+  top: 5%;
+  font-size: 2.6rem;
+  padding: 9px;
+  background-color: #cf9833;
+  color: #fff;
+  left: 1%;
+  width: 20%;
+  border-top-left-radius: 49px;
+  border-bottom-left-radius: 49px;
+  cursor: pointer;
+}
+.icons_navbar {
+  display: flex;
+  width: 35%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.icon_ {
+  font-size: 1.7rem;
+  margin: 0 30px;
+}
+.icon_td {
+  font-size: 1.5rem;
+}
+.Heart_Div,
+.Cart_Div {
+  position: relative;
+}
+.span33 {
+  position: absolute;
+  top: 0;
+  right: 55%;
+  background: #cf9833;
+  padding: 3px 5px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+}
+.spancart {
+  position: absolute;
+  top: 5px;
+  right: 34px;
+  background: #cf9833;
+  padding: 3px 5px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+}
+
+.Cart_Div > svg {
+  font-size: 1.9rem;
+}
+.nav-item {
+  margin: 0 10px !important;
+}
+.nav-link {
+  font-family: "Tajawal", sans-serif;
+  font-size: 18px !important;
+}
+.Nav {
+  box-shadow: 0px 0px 10px #ccc !important;
+}
+.Sections {
+  width: 25%;
+  text-align: center;
+  color: #000 !important;
+  font-size: 20px !important;
+  font-weight: 600;
+  align-items: center;
+}
+.navbar {
+  padding: 0rem 0rem !important;
+}
+
+
+
+/*  */
+
 @media (max-width: 500px) {
+
   .single,
   .single1 {
     padding: 0 !important;
   }
+
   .p {
     width: 100%;
-    padding-left: 0 !important ;
+    padding-left: 0 !important;
   }
+
   .pTest {
     width: 100%;
     font-size: 10px;
   }
-  .inc,.dec{
+
+  .inc,
+  .dec {
     bottom: 6%;
   }
+  .logo {
+    width: 17%;
+  }
+  .icons_navbar {
+    width: auto;
+  }
+  .icon_ {
+    font-size: 20px !important;
+  }
+  .icon_td {
+    font-size: 20px !important;
+  }
+}
 
+.arrow_top_bottom {
+  font-size: 23px;
+  cursor: pointer;
+  color: #cf9833;
+}
+
+/* Edit */
+
+.rowking {
+  position: absolute;
+  right: 0;
 }
 
 @media (max-width: 600px) {
-  .rowking{
+  .rowking {
     position: absolute;
     right: 0;
   }
-  .img{
+
+  .img {
     width: 50px;
     height: 60px;
   }
-  .li{
+
+  .li {
     padding: 10px !important;
   }
-  .cart{
+
+  .cart {
     padding-right: 0 !important;
   }
-  .btnadd{
+
+  .btnadd {
     font-size: 13px;
     border-radius: 10px;
   }
-  .h2p{
+
+  .h2p {
     font-size: 15px;
   }
+  .div_section_2{
+    bottom: 15% !important;
+  }
 }
+
+.div_section_2 {
+  position: absolute !important;
+  bottom: 30%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.qafeer_logo{
+  width: 85%;
+  text-align: right;
+}
+

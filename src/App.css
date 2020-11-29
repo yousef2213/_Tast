@@ -1,0 +1,118 @@
+.carousel_home {
+  overflow: hidden;
+}
+.ced {
+  height: 100% !important;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.25rem;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1;
+  user-select: none;
+  justify-content: center;
+}
+.img-Coarousl {
+  color: transparent;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  text-align: center;
+  text-indent: 10000px;
+}
+.carousel-item {
+  height: 100% !important;
+}
+.a1 {
+  width: 40px !important;
+  background: #f9f9f9 !important;
+  height: 50px;
+  align-items: center !important;
+  align-self: center !important;
+  align-items: center;
+  top: 50% !important;
+  left: 2% !important;
+}
+.a2 {
+  width: 40px !important;
+  background: #f9f9f9 !important;
+  height: 50px;
+  align-items: center !important;
+  align-self: center !important;
+  align-items: center;
+  top: 50% !important;
+  right: 2% !important;
+}
+.arroleft {
+  color: #212529;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  left: 8%;
+}
+.arroright {
+  color: #212529;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 8%;
+}
+
+.bottom_arr {
+  background-color: #f9f9f9;
+  color: #212529;
+  padding: 7px 10px;
+  font-size: 1rem;
+}
+.carousel-indicators {
+  bottom: 2.5rem !important;
+}
+.carousel-indicators li {
+  box-sizing: border-box !important;
+}
+
+/*  */
+
+.icon_Sec2 {
+  font-size: 2.7rem;
+  margin-left: 10px;
+  color: #cf9833;
+}
+.b_g {
+  border: 2px solid #dcdcdc;
+  border-radius: 3px;
+}
+
+/*  */
+.left_sec2 {
+  align-self: center;
+}
+.imgs_Tg {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+
+.Tg1_div {
+  position: relative;
+}
+.Tg1 {
+  color: transparent;
+  width: 100%;
+  object-fit: cover;
+  text-align: center;
+  text-indent: 10000px;
+}
+
+.fa_Section {
+  color: #fff;
+  background-color: #cf9833;
+  padding: 5px;
+  font-size: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 5px;
+}

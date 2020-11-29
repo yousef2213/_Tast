@@ -1,11 +1,12 @@
 import React from "react";
 import Productsdata from "../data/Productsdata";
 import { BsFillStarFill } from "react-icons/bs";
-function Products() {
+import { AiOutlineRedo } from "react-icons/ai";
+function Products({Products = Productsdata}) {
   return (
     <div className="container">
       <div className="row bkws">
-        {Productsdata.map(({ id, name, img, price }) => {
+        {Products.map(({ id, name, img, price }) => {
           return (
             <div key={id} className="col-12 col-md-2 my-2 text-right">
               <div className="first">
@@ -25,17 +26,12 @@ function Products() {
             </div>
           );
         })}
+        <div className="col-12">
+          <button className="font-main btn_more"> <AiOutlineRedo className="ml-2" /> عرض المزيد</button>
+        </div>
       </div>
     </div>
   );
 }
 
 export default Products;
-
-/* <div className="icons text-right">
-<BsFillStarFill className="icon text-muted" />
-<BsFillStarFill className="icon" />
-<BsFillStarFill className="icon" />
-<BsFillStarFill className="icon" />
-<BsFillStarFill className="icon" />
-</div> */

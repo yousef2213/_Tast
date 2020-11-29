@@ -58,7 +58,7 @@ function Navbar() {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <BsList /> <span>الأقسام</span>
+                <BsList className="listicon" /> <span>الأقسام</span>
               </Link>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mx-auto">

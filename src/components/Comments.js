@@ -18,7 +18,7 @@ function Comments() {
             </div>
             <div className="pr-3">
               <div className="PersonsDC">
-                <h6 className="text-right font-main font-weight-bold">
+                <h6 className="text-right font-main font-weight-bold name-comment">
                   احمد النجار
                 </h6>
                 <div className="icons text-right">

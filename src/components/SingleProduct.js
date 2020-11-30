@@ -22,7 +22,7 @@ function SingleProduct() {
             <img src={Product} className="img" alt="Product" />
           </div>
         </div>
-        <div className="col-12 col-md-6 align-self-center mx-0 single1">
+        <div className="col-12 col-md-6 align-self-center mx-0 mt-5 single1">
           <div className="icons text-right">
             <span className="ml-2">تعليق</span>
             <BsFillStarFill className="icon" />

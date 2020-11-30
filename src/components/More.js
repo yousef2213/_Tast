@@ -1,5 +1,3 @@
-import React from "react";
-
 function More() {
   return (
     <div className="container">
@@ -8,7 +6,7 @@ function More() {
           <h4 className="text-right mb-4">معلومات اضافية</h4>
           <table className="table table-bordered rounded">
             <tbody>
-            <tr>
+              <tr>
                 <td className="text-right td">اكتيف</td>
                 <td className="text-right td tdc">الماركة</td>
               </tr>

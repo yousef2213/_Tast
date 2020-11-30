@@ -139,7 +139,7 @@ function CheckoutComponent() {
                         placeholder="7911**** **** **** ****"
                       />
                     </div>
-                    <div className="my-3 d-flex justify-content-between">
+                    <div className="my-3 dflex_small">
                       <div>
                         <label className="label">رمز الامان</label>
                         <input

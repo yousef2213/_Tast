@@ -29,8 +29,8 @@ function LastHome() {
                       <BsFillStarFill className="iconP" />
                       <BsFillStarFill className="iconP" />
                     </div>
-                    <h6 className="nameP">{name}</h6>
-                    <h6 className="priceP">
+                    <h6 className="nameP text-right">{name}</h6>
+                    <h6 className="priceP text-right">
                       ${price} <span className="text-muted">$133 </span>
                     </h6>
                   </div>

@@ -3,18 +3,23 @@
 .font-main {
   font-family: "Tajawal", sans-serif !important;
 }
-
-ul{
-  margin:  0 !important;
-  padding:  0 !important;
+a:hover{
+  text-decoration: none !important;
 }
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 body {
   background-color: #f9f9f9 !important;
   direction: rtl !important;
 }
+
 .C_p {
   cursor: pointer;
 }
+
 button:focus {
   outline: none !important;
 }
@@ -322,15 +327,18 @@ td {
 .fir {
   box-shadow: 0px 0px 10px #ccc !important;
 }
+
 .logo {
   align-self: center;
   width: 14%;
 }
+
 .input {
   position: relative;
   width: 50%;
   align-self: center;
 }
+
 .input_Search {
   position: relative;
   padding: 10px;
@@ -340,13 +348,16 @@ td {
   font-family: "Tajawal", sans-serif;
   width: 100%;
 }
+
 .card_nav {
   color: #000 !important;
   font-size: 2rem;
 }
+
 .input_Search::placeholder {
   font-family: "Tajawal", sans-serif;
 }
+
 .input_Search:focus {
   outline: none;
 }
@@ -364,6 +375,7 @@ td {
   border-bottom-left-radius: 49px;
   cursor: pointer;
 }
+
 .icons_navbar {
   display: flex;
   width: 35%;
@@ -371,17 +383,21 @@ td {
   text-align: center;
   margin: 0 auto;
 }
+
 .icon_ {
   font-size: 1.7rem;
   margin: 0 30px;
 }
+
 .icon_td {
   font-size: 1.5rem;
 }
+
 .Heart_Div,
 .Cart_Div {
   position: relative;
 }
+
 .span33 {
   position: absolute;
   top: 0;
@@ -392,6 +408,7 @@ td {
   color: #fff;
   font-size: 10px;
 }
+
 .spancart {
   position: absolute;
   top: 5px;
@@ -403,19 +420,23 @@ td {
   font-size: 10px;
 }
 
-.Cart_Div > svg {
+.Cart_Div>svg {
   font-size: 1.9rem;
 }
+
 .nav-item {
   margin: 0 10px !important;
 }
+
 .nav-link {
   font-family: "Tajawal", sans-serif;
   font-size: 18px !important;
 }
+
 .Nav {
   box-shadow: 0px 0px 10px #ccc !important;
 }
+
 .Sections {
   width: 25%;
   text-align: center;
@@ -424,13 +445,32 @@ td {
   font-weight: 600;
   align-items: center;
 }
+
 .navbar {
   padding: 0rem 0rem !important;
 }
 
+.visa {
+  width: 50px;
+  height: 28px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 10px;
+}
+
 /*  */
 
+.qafeer_logo {
+  width: 85%;
+  text-align: right;
+}
+.dflex_small{
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (max-width: 500px) {
+
   .single,
   .single1 {
     padding: 0 !important;
@@ -450,17 +490,57 @@ td {
   .dec {
     bottom: 6%;
   }
+
   .logo {
     width: 17%;
   }
+
   .icons_navbar {
     width: auto;
   }
+
   .icon_ {
     font-size: 20px !important;
   }
+
   .icon_td {
     font-size: 20px !important;
+  }
+
+  .bkw {
+    padding: 1rem 0;
+  }
+
+  .visa {
+    height: 20px;
+    width: 30px;
+  }
+
+  .psamll_ {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .sp {
+    font-size: 8px;
+  }
+
+  .icon {
+    font-size: 8px;
+  }
+
+  .name-comment {
+    font-size: 10px;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  .qafeer_logo {
+    width: 100%;
+    text-align: right;
+  }
+  .dflex_small{
+    display: block !important;
   }
 }
 
@@ -480,6 +560,7 @@ td {
 .carousel_home {
   overflow: hidden;
 }
+
 .ced {
   height: 100% !important;
   display: flex;
@@ -493,6 +574,7 @@ td {
   user-select: none;
   justify-content: center;
 }
+
 .img-Coarousl {
   color: transparent;
   width: 100%;
@@ -501,9 +583,11 @@ td {
   text-align: center;
   text-indent: 10000px;
 }
+
 .carousel-item {
   height: 100% !important;
 }
+
 .a1 {
   width: 40px !important;
   background: #f9f9f9 !important;
@@ -514,6 +598,7 @@ td {
   top: 50% !important;
   left: 2% !important;
 }
+
 .a2 {
   width: 40px !important;
   background: #f9f9f9 !important;
@@ -524,6 +609,7 @@ td {
   top: 50% !important;
   right: 2% !important;
 }
+
 .arroleft {
   color: #212529;
   font-size: 2rem;
@@ -531,6 +617,7 @@ td {
   top: 10px;
   left: 8%;
 }
+
 .arroright {
   color: #212529;
   font-size: 2rem;
@@ -545,9 +632,11 @@ td {
   padding: 7px 10px;
   font-size: 1rem;
 }
+
 .carousel-indicators {
   bottom: 2.5rem !important;
 }
+
 .carousel-indicators li {
   box-sizing: border-box !important;
 }
@@ -559,6 +648,7 @@ td {
   margin-left: 10px;
   color: #cf9833;
 }
+
 .b_g {
   border: 2px solid #dcdcdc;
   border-radius: 3px;
@@ -568,16 +658,17 @@ td {
 .left_sec2 {
   align-self: center;
 }
+
 .imgs_Tg {
   display: flex;
   align-items: center;
   margin-top: 2rem;
 }
 
-
 .Tg1_div {
   position: relative;
 }
+
 .Tg1 {
   color: transparent;
   width: 100%;
@@ -596,17 +687,19 @@ td {
   margin: 0 5px;
 }
 
-
-
 @media (max-width: 600px) {
   .rowking {
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
-    right: 0;
+    bottom: -4rem;
   }
 
   .img {
-    width: 50px;
+    width: 60px;
     height: 60px;
+    margin: 0 2px;
+    display: inline-block;
   }
 
   .li {
@@ -625,28 +718,51 @@ td {
   .h2p {
     font-size: 15px;
   }
+
   .div_section_2 {
     bottom: 20% !important;
   }
-  .carousel-indicators{
-    bottom: 5%!important;
+
+  .carousel-indicators {
+    bottom: 5% !important;
   }
-  .a1,.a2{
+
+  .a1,
+  .a2 {
     height: 40px;
   }
-  .arroleft,.arroright{
+
+  .arroleft,
+  .arroright {
     top: 6%;
   }
-.textmyoe{
-  font-size: 14px;
-}
-.textmyoe1{
-  font-size: 20px;
-}
-.textmyoe2{
-  font-size: 12px;
-  margin-top: 5px;
-}
+
+  .textmyoe {
+    font-size: 10px;
+  }
+
+  .textmyoe1 {
+    font-size: 20px;
+  }
+
+  .textmyoe2 {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  /*  */
+
+  .icon_Sec2 {
+    font-size: 1.5rem;
+  }
+
+  .nameSec2 {
+    font-size: 10px;
+  }
+
+  .PSec2 {
+    font-size: 10px;
+  }
 }
 
 .div_section_2 {
@@ -657,14 +773,10 @@ td {
   margin: 0 auto;
 }
 
-.qafeer_logo {
-  width: 85%;
-  text-align: right;
-}
-
 .listicon {
   font-size: 1.8rem;
 }
+
 .awl {
   font-size: 1rem !important;
 }

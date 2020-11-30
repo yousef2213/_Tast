@@ -30,23 +30,23 @@ function Section() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-3 mx-auto pt-3">
+        <div className="col-12 col-md-3 mx-auto psamll_">
           <div className="cart">
             <img src={Product1} className="Product1Img" alt={Product1} />
-            <div className="icons text-right">
+            <div className="icons text-right psamll_">
               <BsFillStarFill className="icon text-muted" />
               <BsFillStarFill className="icon" />
               <BsFillStarFill className="icon" />
               <BsFillStarFill className="icon" />
               <BsFillStarFill className="icon" />
             </div>
-            <h6 className="text-right mt-2 text-muted">
+            <h6 className="text-right mt-2 text-muted psamll_">
               حذاء رياضي للرجال - اسود في رمادي
             </h6>
             <div>
-              <h5 className="text-right pb-2">$329.99</h5>
+              <h5 className="text-right pb-2 psamll_">$329.99</h5>
             </div>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between psamll_">
               <AiOutlineHeart className="heart1 align-self-center" />
               <button className="d-block w-75 btnadd mb-0">
                 اضافة لمشتريات النقير

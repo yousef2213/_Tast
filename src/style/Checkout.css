@@ -43,14 +43,8 @@
     align-self: center;
 }
 
-.visa{
-    width: 50px;
-    height: 28px;
-    cursor: pointer;
-    display: inline-block;
-    margin: 10px 10px;
 
-}
+
 .input_order_btn{
     display: block;
     padding: 10px;

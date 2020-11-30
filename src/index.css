@@ -687,7 +687,72 @@ td {
   margin: 0 5px;
 }
 
+/* Chedck Out */
+.bgw_order,
+.bgw_order2,
+._pay {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+}
+.bgw_order2 {
+    padding: 0;
+}
+.label{
+    text-align: right;
+    display: block;
+    padding-right: 10px;
+    align-self: center;
+    font-size: 18px;
+    color: #6b6a6a;
+}
+.star{
+    align-self: center;
+    color: #cf9833;
+}
+.input_order {
+  display: block;
+  padding: 10px;
+  border: 0;
+  border: 1px solid #cf9833;
+  border-radius: 40px;
+  width: 100%;
+  color: #000;
+}
+.input_order:focus {
+  outline: none;
+}
+.order_1{
+    padding: 10px 20px;
+    align-items: center;
+}
+.img_order_1{
+    width: 70px;
+    border: 1px solid #e2e2e2;
+    align-self: center;
+}
+
+.input_order_btn{
+    display: block;
+    padding: 10px;
+    border: 0;
+    background-color: #cf9833;
+    border-radius: 40px;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+}
+.input_order_btn:focus{
+    outline: none;
+}
+
+
+/*  */
 @media (max-width: 600px) {
+  .order_1{
+    padding: 10px 10px;
+  }
   .rowking {
     display: flex;
     flex-wrap: wrap;

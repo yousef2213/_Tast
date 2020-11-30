@@ -1,5 +1,4 @@
-import React from "react";
-import "../style/Checkout.css";
+import React from "react"
 import ImgTest from "../images/1.png";
 import MyOrderData from "../data/MyOrderData";
 import Visa from "../images/pay/visa.png";
@@ -12,7 +11,7 @@ function CheckoutComponent() {
   return (
     <div className="container">
       <div className="row mx-auto py-5">
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 pt-4">
           <div>
             <h4 className="text-right font-main font-weight-bold pb-4">
               العنوان
@@ -63,7 +62,7 @@ function CheckoutComponent() {
             </form>
           </div>
         </div>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 pt-4">
           <div>
             <h4 className="text-right font-main font-weight-bold pb-4">
               طلباتي

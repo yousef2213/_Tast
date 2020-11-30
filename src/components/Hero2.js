@@ -5,7 +5,7 @@ import { BiCustomize } from "react-icons/bi";
 import { GiStarsStack } from "react-icons/gi";
 import { FaInstagramSquare, FaRegUser, FaPhoneAlt } from "react-icons/fa";
 
-import "../style/hero.css";
+
 function Hero2() {
   return (
     <div className="container py-5">

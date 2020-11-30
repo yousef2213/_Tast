@@ -19,10 +19,10 @@ function Sec3() {
                   التجار جدد
                 </h6>
               </div>
-              <div className="col-12 col-md-4 left_sec2">
+              <div className="col-12 col-md-4 left_sec2 py-3">
                 <div className="Tg1_div">
                   <img src={Tgor} className="Tg1" alt="Togar" />
-                  <h6 className="font-main font-weight-bold mt-2 text-right">
+                  <h6 className="font-main font-weight-bold mt-2 text-right pt-3">
                     معرض 1
                   </h6>
                   <h4 className="font-main text-right">نص</h4>
@@ -33,19 +33,19 @@ function Sec3() {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-4 left_sec2">
+              <div className="col-12 col-md-4 left_sec2 py-3">
                 <div className="Tg1_div">
                   <img src={Tgor} className="Tg1" alt="Togar" />
-                  <h6 className="font-main font-weight-bold mt-2 text-right">
+                  <h6 className="font-main font-weight-bold mt-2 text-right  pt-3">
                     معرض 1
                   </h6>
                   <h4 className="font-main text-right">نص</h4>
                 </div>
               </div>
-              <div className="col-12 col-md-4 left_sec2">
+              <div className="col-12 col-md-4 left_sec2 py-3">
                 <div className="Tg1_div">
                   <img src={Tgor} className="Tg1" alt="Togar" />
-                  <h6 className="font-main font-weight-bold mt-2 text-right">
+                  <h6 className="font-main font-weight-bold mt-2 text-right  pt-3">
                     معرض 1
                   </h6>
                   <h4 className="font-main text-right">نص</h4>

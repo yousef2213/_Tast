@@ -1,4 +1,4 @@
-import "../style/hero.css";
+
 function Hero() {
   return (
     <div className="col-12 hero">

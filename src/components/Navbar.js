@@ -2,7 +2,6 @@ import { AiOutlineHeart, AiOutlineSearch } from "react-icons/ai";
 import { FaRegUser } from "react-icons/fa";
 import { BiCartAlt } from "react-icons/bi";
 import { BsList } from "react-icons/bs";
-import "../style/Navbar.css";
 import Logo from "../images/qafeer-logo.png";
 import { Link } from "react-router-dom";
 function Navbar() {

@@ -1,8 +1,4 @@
-import img1 from "../../images/home1.png";
-import img2 from "../../images/home2.png";
-import img3 from "../../images/home3.png";
-import img4 from "../../images/home4.png";
-import img5 from "../../images/home5.png";
+import banner from "../../images/bannerbig.png"
 import {BsArrowLeftShort, BsArrowRightShort} from "react-icons/bs"
 
 function Carousel() {
@@ -29,19 +25,19 @@ function Carousel() {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item ced active">
-            <img src={img1} className="img-Coarousl" alt="..." />
+            <img src={banner} className="img-Coarousl" alt="..." />
           </div>
           <div className="carousel-item ced">
-            <img src={img2} className="img-Coarousl" alt="..." />
+            <img src={banner} className="img-Coarousl" alt="..." />
           </div>
           <div className="carousel-item ced">
-            <img src={img3} className="img-Coarousl" alt="..." />
+            <img src={banner} className="img-Coarousl" alt="..." />
           </div>
           <div className="carousel-item ced">
-            <img src={img4} className="img-Coarousl" alt="..." />
+            <img src={banner} className="img-Coarousl" alt="..." />
           </div>
           <div className="carousel-item ced">
-            <img src={img5} className="img-Coarousl" alt="..." />
+            <img src={banner} className="img-Coarousl" alt="..." />
           </div>
         </div>
         <a className="carousel-control-prev a1" href="#carouselExampleIndicators" role="button" data-slide="prev">

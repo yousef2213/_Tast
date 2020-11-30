@@ -2,6 +2,9 @@ import { AiOutlineHeart, AiOutlineSearch } from "react-icons/ai";
 import { FaRegUser } from "react-icons/fa";
 import { BiCartAlt } from "react-icons/bi";
 import { BsList } from "react-icons/bs";
+import qafferr from "../images/القفير 2.png"
+import qafferrHeart from "../images/heart.svg"
+import userImg from "../images/User.svg"
 import Logo from "../images/qafeer-logo.png";
 import { Link } from "react-router-dom";
 function Navbar() {
@@ -26,15 +29,15 @@ function Navbar() {
               </div>
               <div className="icons_navbar">
                 <div>
-                  <FaRegUser className="icon_ icon_td" />
+                  <img src={userImg} className="icon_" alt="qafferr" />
                 </div>
                 <div className="Heart_Div">
-                  <AiOutlineHeart className="icon_" />
+                  <img src={qafferrHeart} className="icon_" alt="qafferr" />
                   <span className="span33">33</span>
                 </div>
                 <div className=" Cart_Div">
                   <Link to="/Checkout" className="card_nav">
-                    <BiCartAlt className="icon_" />
+                    <img src={qafferr} className="icon_" alt="qafferr" />
                     <span className="spancart">0</span>
                   </Link>
                 </div>

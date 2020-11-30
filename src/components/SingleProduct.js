@@ -7,7 +7,7 @@ import MestarCard from "../images/pay/mastercard.png";
 import Paypal from "../images/pay/paypal.png";
 import Maestro from "../images/pay/maestro.png";
 import CardBanek from "../images/pay/cardBank.png";
-import Discove from "../images/pay/discover.ong.png";
+import Discove from "../images/pay/discover.png";
 function SingleProduct() {
   return (
     <div className="container mx-auto">

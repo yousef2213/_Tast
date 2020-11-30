@@ -411,8 +411,8 @@ td {
 
 .spancart {
   position: absolute;
-  top: 5px;
-  right: 34px;
+  top: 9px;
+  right: 39px;
   background: #cf9833;
   padding: 3px 5px;
   border-radius: 50%;
@@ -925,4 +925,16 @@ td {
 
 .awl {
   font-size: 1rem !important;
+}
+
+
+
+.her_test{
+  width: 100%;
+  display: block;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }

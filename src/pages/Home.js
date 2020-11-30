@@ -17,7 +17,9 @@ function Home() {
       <Sec2 />
       <Sec3 />
       <LastHome />
+
       <Hero />
+
       <div className="row mx-0 px-0 py-5">
         <div className="container">
           <div className="row mx-0 pb-3">

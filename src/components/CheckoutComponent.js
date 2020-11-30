@@ -6,11 +6,11 @@ import MestarCard from "../images/pay/mastercard.png";
 import Paypal from "../images/pay/paypal.png";
 import Maestro from "../images/pay/maestro.png";
 import CardBanek from "../images/pay/cardBank.png";
-import Discove from "../images/pay/discover.ong.png";
+import Discove from "../images/pay/discover.png";
 function CheckoutComponent() {
   return (
     <div className="container">
-      <div className="row mx-auto py-5">
+      <div className="row mx-auto py-2">
         <div className="col-12 col-md-6 pt-4">
           <div>
             <h4 className="text-right font-main font-weight-bold pb-4">

@@ -1,3 +1,4 @@
+import image_1 from "../images/Image-1.png"
 import Img from "../images/img1.png";
 import Tgor from "../images/Section2/tg1.png";
 import M31 from "../images/Section2/img2.png";
@@ -21,7 +22,7 @@ function Sec3() {
               </div>
               <div className="col-12 col-md-4 left_sec2 py-3">
                 <div className="Tg1_div">
-                  <img src={Tgor} className="Tg1" alt="Togar" />
+                  <img src={image_1} className="Tg1" alt="Togar" />
                   <h6 className="font-main font-weight-bold mt-2 text-right pt-3">
                     معرض 1
                   </h6>
@@ -35,7 +36,7 @@ function Sec3() {
               </div>
               <div className="col-12 col-md-4 left_sec2 py-3">
                 <div className="Tg1_div">
-                  <img src={Tgor} className="Tg1" alt="Togar" />
+                  <img src={image_1} className="Tg1" alt="Togar" />
                   <h6 className="font-main font-weight-bold mt-2 text-right  pt-3">
                     معرض 1
                   </h6>
@@ -44,7 +45,7 @@ function Sec3() {
               </div>
               <div className="col-12 col-md-4 left_sec2 py-3">
                 <div className="Tg1_div">
-                  <img src={Tgor} className="Tg1" alt="Togar" />
+                  <img src={image_1} className="Tg1" alt="Togar" />
                   <h6 className="font-main font-weight-bold mt-2 text-right  pt-3">
                     معرض 1
                   </h6>

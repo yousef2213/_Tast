@@ -1,6 +1,4 @@
-import { AiOutlineHeart, AiOutlineSearch } from "react-icons/ai";
-import { FaRegUser } from "react-icons/fa";
-import { BiCartAlt } from "react-icons/bi";
+import { AiOutlineSearch } from "react-icons/ai";
 import { BsList } from "react-icons/bs";
 import qafferr from "../images/القفير 2.png"
 import qafferrHeart from "../images/heart.svg"
@@ -12,11 +10,11 @@ function Navbar() {
     <div className="container-fluid fir">
       <div className="container">
         <div className="row">
-          <div className="col-12 py-3">
+          <div className="col-12 py-3 px-0">
             <div className="d-flex">
               <div className="logo">
                 <h5 className="font-main text-right ml-auto">
-                  <img src={Logo} className="qafeer_logo ml-auto" />
+                  <img src={Logo} className="qafeer_logo ml-auto" alt="" />
                 </h5>
               </div>
               <div className="input d-none d-md-block">

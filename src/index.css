@@ -572,9 +572,6 @@ td {
     bottom: 6%;
   }
 
-  .logo {
-    width: 17%;
-  }
 
   .icons_navbar {
     width: auto;
@@ -582,6 +579,7 @@ td {
 
   .icon_ {
     font-size: 20px !important;
+    margin: 0 20px;
   }
 
   .icon_td {
@@ -902,7 +900,7 @@ td {
     font-size: 10px;
   }
   .b_g{
-    border: none;
+    border: none
   }
   .dhover{
     border: 2px solid #dcdcdc;

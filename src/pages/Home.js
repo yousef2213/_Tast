@@ -6,6 +6,7 @@ import Products from "../components/Products.js";
 import LastHome from "../components/HomeComponents/LastHome.js";
 import Hero from "../components/Hero";
 import ProductsLaptop from "../data/ProductsLaptop";
+
 function Home() {
   return (
     <div className="container-fluid">
@@ -17,9 +18,7 @@ function Home() {
       <Sec2 />
       <Sec3 />
       <LastHome />
-
       <Hero />
-
       <div className="row mx-0 px-0 py-5">
         <div className="container">
           <div className="row mx-0 pb-3">

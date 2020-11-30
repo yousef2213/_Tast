@@ -7,7 +7,6 @@ import Visa from "../images/pay/visa.png";
 import MestarCard from "../images/pay/mastercard.png";
 import Paypal from "../images/pay/paypal.png";
 import Maestro from "../images/pay/maestro.png";
-import CardBanek from "../images/pay/cardBank.png";
 import Discove from "../images/pay/discover.png";
 import { Link } from "react-router-dom";
 function Footer() {
@@ -152,18 +151,21 @@ function Footer() {
         </div>
       </div>
       <div className="row px-5 footer_footer">
-        <div className="col-12 d-flex justify-content-between py-2">
-          <div>
+        <div className="col-12 d-sm-block d-md-flex justify-content-between text-center py-2">
+          <div className="m-sm-auto m-md-0">
             <div className="text-right">
               <img src={Visa} className="visa" alt="Visa" />
               <img src={MestarCard} className="visa" alt="Visa" />
               <img src={Paypal} className="visa" alt="Visa" />
               <img src={Maestro} className="visa" alt="Visa" />
               <img src={Discove} className="visa" alt="Visa" />
-              <img src={CardBanek} className="visa" alt="Visa" />
             </div>
           </div>
-          <h6 className="all">جميع الحقوق محفوظة</h6>
+          <div>
+            <hr className="bg-white d-block d-md-none" />
+            <h6 className="all font-main">جميع الحقوق محفوظة</h6>
+            <h6 className="all font-main">تصميم و برمجة  <a href="https://best-gator.com/" target="_blank">بيست جيتور</a></h6>
+          </div>
         </div>
       </div>
     </div>

@@ -640,7 +640,9 @@ td {
 
 .rowking {
   position: absolute;
-  right: 0;
+  right: 0;  
+  top: 1.8rem;
+
 }
 
 .carousel_home {
@@ -850,6 +852,12 @@ td {
   background-repeat: no-repeat;
 }
 
+.DefaultSrc{
+  height: 400px;
+}
+.nav-tabs .nav-item{
+  margin: 0 !important;
+}
 /*  */
 @media (max-width: 600px) {
   .carousel-indicators {
@@ -861,7 +869,9 @@ td {
   }
 
   .rowking {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     position: absolute;
     bottom: -4rem;

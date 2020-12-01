@@ -21,7 +21,7 @@ function SingleProduct() {
     <div className="container mx-auto">
       <div className="row mx-0">
 
-        <div className="col-12 col-md-6 d-flex mx-auto single mb-3">
+        <div className="col-12 col-md-6 d-flex mx-auto single mb-3 h-100">
           <img src={SingleProduct.img || Product} className="DefaultSrc w-100 d-block" alt="Product" />
           <div className="rowking mb-3">
             <img src={Product} onClick={ChangeSrc} className="img imgB" alt="Product"/>
@@ -67,7 +67,7 @@ function SingleProduct() {
               <button className="d-block w-100 btnadd" onClick={() => addToCart(SingleProduct.id)}>
                 اضافة لمشتريات النقير
               </button>
-              <input className="form-control inp" defaultValue={SingleProduct.count || 1} />
+              <input className="form-control inp" defaultValue={SingleProduct.count} />
               <span className="inc" onClick={() => Increment(SingleProduct.id || 1)}>+</span>
               <span className="dec" onClick={() => decrement(SingleProduct.id || 1)}>-</span>
             </div>

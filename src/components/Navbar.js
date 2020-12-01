@@ -3,9 +3,13 @@ import { BsList } from "react-icons/bs";
 import qafferr from "../images/القفير 2.png"
 import qafferrHeart from "../images/heart.svg"
 import userImg from "../images/User.svg"
-import Logo from "../images/qafeer-logo.png";
+// import Logo from "../images/qafeer-logo.png";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { QafeerContext } from "../context/context";
 function Navbar() {
+
+  const {CartItem, Total} = useContext(QafeerContext);
   return (
     <div className="container-fluid fir">
       <div className="container">
@@ -14,7 +18,8 @@ function Navbar() {
             <div className="d-flex">
               <div className="logo">
                 <h5 className="font-main text-right ml-auto">
-                  <img src={Logo} className="qafeer_logo ml-auto" alt="" />
+                  Logo
+                  {/* <img src={Logo} className="qafeer_logo ml-auto" alt="" /> */}
                 </h5>
               </div>
               <div className="input d-none d-md-block">
@@ -36,12 +41,12 @@ function Navbar() {
                 <div className=" Cart_Div">
                   <Link to="/Checkout" className="card_nav">
                     <img src={qafferr} className="icon_" alt="qafferr" />
-                    <span className="spancart">0</span>
+                    <span className="spancart"> {CartItem} </span>
                   </Link>
                 </div>
                 <div>
                   <h6 className="font-main mb-0">القفير</h6>
-                  <p className="font-main text-righ mb-0">$0.00</p>
+                  <p className="font-main text-righ mb-0">${Total}</p>
                 </div>
               </div>
             </div>
@@ -67,17 +72,17 @@ function Navbar() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-center" to="/Merchants">
+                    <Link className="nav-link text-center" to="/Profile">
                       التجار
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-center" to="/">
+                    <Link className="nav-link text-center" to="/Classifications">
                       المعارض
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-center" to="/">
+                    <Link className="nav-link text-center" to="/category">
                       الصفحات العاجلة
                     </Link>
                   </li>

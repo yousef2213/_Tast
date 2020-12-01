@@ -5,6 +5,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     price: 159.0,
+    count: 1
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     price: 159.0,
+    count: 1
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     price: 159.0,
+    count: 1
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/1670766/pexels-photo-1670766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     price: 159.0,
+    count: 1
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     price: 159.0,
+    count: 1
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/1670766/pexels-photo-1670766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     price: 159.0,
+    count: 1
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     price: 159.0,
+    count: 1
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/1670766/pexels-photo-1670766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     price: 159.0,
+    count: 1
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     price: 159.0,
+    count: 1
   },
   {
     id: 10,
@@ -68,6 +77,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/1670766/pexels-photo-1670766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     price: 159.0,
+    count: 1
   },
   {
     id: 11,
@@ -75,6 +85,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     price: 159.0,
+    count: 1
   },
   {
     id: 12,
@@ -82,6 +93,7 @@ const Productsdata = [
     img:
       "https://images.pexels.com/photos/1670766/pexels-photo-1670766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     price: 159.0,
+    count: 1
   },
 ];
 

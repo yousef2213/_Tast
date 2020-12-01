@@ -1,15 +1,25 @@
-import React from "react";
-import Productsdata from "../data/Productsdata";
+import React, { useContext } from "react";
+
 import { BsFillStarFill } from "react-icons/bs";
 import { AiOutlineRedo } from "react-icons/ai";
 import { Link } from "react-router-dom";
-function Products({ Products = Productsdata }) {
+import { useEffect } from "react";
+import axios from "axios";
+import { QafeerContext } from "../context/context";
+
+function Products() {
+  const { AllProducts, addToCart, setSingleProduct } = useContext(QafeerContext);
+  useEffect(() => {
+    const data = axios.get(
+      "https://wardi.me/wp-json/bestgator/v1/getSingleProduct?product_id=22241"
+    );
+  }, []);
   return (
     <div className="container">
       <div className="row bkws">
-        {Products.map(({ id, name, img, price }) => {
+        {AllProducts.map(({ id, name, img, price }) => {
           return (
-            <div key={id} className="col-12 col-md-2 my-2 text-right">
+            <div key={id} onClick={() => setSingleProduct(id)} className="col-12 col-md-2 my-2 text-right">
               <Link to="/SingleProduct" className="text-dark">
                 <div className="first">
                   <img src={img} className="imgProd" alt="img" />

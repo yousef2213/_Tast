@@ -10,7 +10,6 @@ function SingleProductPage() {
     <div>
       <SingleProduct />
       <Nav />
-      <Section />
       <More />
       <Comments />
       <div className="mb-5">

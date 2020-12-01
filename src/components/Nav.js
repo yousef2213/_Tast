@@ -1,17 +1,35 @@
 import React from "react";
+import Section from "./Section";
+
 
 function Nav() {
   return (
     <div className="container mx-auto p-0 mt-5">
       <div className="row mx-0">
         <div className="col-12 w-100 mx-0">
-          <div className="nav">
-            <ul className="nav-bar ml-auto mr-0 justify-content-start pr-0 mt-4">
-              <li className="li cl">الوصف</li>
-              <li className="li">معلومات اضافية</li>
-              <li className="li">التعليقات(1)</li>
-            </ul>
+          <ul className="nav nav-tabs" id="myTab" role="tablist">
+            <li className="nav-item" role="presentation">
+              <a className="nav-link li active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">الوصف</a>
+            </li>
+            <li className="nav-item" role="presentation">
+              <a className="nav-link li" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">معلومات اضافية</a>
+            </li>
+            <li className="nav-item" role="presentation">
+              <a className="nav-link li" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">التعليقات(1)</a>
+            </li>
+          </ul>
+          <div className="tab-content" id="myTabContent">
+            <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <Section/>
+            </div>
+            <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <Section/>
+            </div>
+            <div className="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <Section/>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -19,3 +37,4 @@ function Nav() {
 }
 
 export default Nav;
+

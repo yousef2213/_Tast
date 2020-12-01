@@ -1,4 +1,4 @@
-import CheckoutComponent from "../components/CheckoutComponent";
+import CheckoutComponent from "../components/CheckOut/CheckoutComponent.js";
 function CheckOut() {
   return (
     <div>

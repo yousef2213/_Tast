@@ -1,0 +1,125 @@
+import image_1 from "../../images/Image-1.png";
+import Img from "../../images/img1.png";
+import M31 from "../../images/Section2/img2.png";
+import M32 from "../../images/Section2/img22.png";
+// import { AiFillFacebook, AiFillTwitterSquare } from "react-icons/ai";
+// import { FaInstagramSquare } from "react-icons/fa";
+function Sec3() {
+  return (
+    <div className="container mx-auto">
+      <div className="row mx-0 px-0 py-5">
+        <div className="col-12 col-md-6 h-100">
+          <div className="img_number_one w-100 h-100">
+            <div className="text_number_one py-4">
+              <h2 className="text-right font-main">اصحاب معرض جدد</h2>
+              <h5 className="text-right font-main">التجار الجدد</h5>
+            </div>
+            <div className="img_number_one_one d-flex my-5">
+              <div className="mx-2">
+                <img src={image_1} className="img-fluid" alt="one" />
+                <div className="py-3 mt-3">
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض 1
+                  </h6>
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض الدرجة الاولي
+                  </h6>
+                </div>
+              </div>
+              <div className="mx-2">
+                <img src={image_1} className="img-fluid" alt="one" />
+                <div className="py-3 mt-3">
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض 2
+                  </h6>
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض الدرجة الثانية
+                  </h6>
+                </div>
+              </div>
+              <div className="mx-2">
+                <img src={image_1} className="img-fluid" alt="one" />
+                <div className="py-3 mt-3">
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض 3
+                  </h6>
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض الدرجة الثالثة
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-6">
+          <div className="img_number_one w-100 h-100">
+            <div className="img_number_one_one d-flex">
+              <div className="">
+                <img src={Img} className="img-fluid" alt="one" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*  */}
+      <div className="row mx-0 px-0 py-5">
+        <div className="col-12 col-md-6">
+          <div className="img_number_one w-100 h-100">
+            <div className="img_number_one_one d-flex">
+              <div className="">
+                <img src={M31} className="img-fluid" alt="one" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-6 h-100">
+          <div className="img_number_one w-100 h-100">
+            <div className="text_number_one py-4">
+              <h2 className="text-right font-main">اصحاب معرض جدد</h2>
+              <h5 className="text-right font-main">التجار الجدد</h5>
+            </div>
+            <div className="img_number_one_one d-flex my-5">
+              <div className="mx-2 position-relative">
+                <img src={M32} className="img-fluid" alt="one" />
+                <div className="py-3 mt-3">
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض 1
+                  </h6>
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض الدرجة الاولي
+                  </h6>
+                </div>
+              </div>
+              <div className="mx-2">
+                <img src={M32} className="img-fluid" alt="one" />
+                <div className="py-3 mt-3">
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض 2
+                  </h6>
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض الدرجة الثانية
+                  </h6>
+                </div>
+              </div>
+              <div className="mx-2">
+                <img src={M32} className="img-fluid" alt="one" />
+                <div className="py-3 mt-3">
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض 3
+                  </h6>
+                  <h6 className="text-right font-main font-weight-bold">
+                    معرض الدرجة الثالثة
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*  */}
+    </div>
+  );
+}
+
+export default Sec3;

@@ -1,12 +1,12 @@
 import React from "react"
-import ImgTest from "../images/1.png";
-import MyOrderData from "../data/MyOrderData";
-import Visa from "../images/pay/visa.png";
-import MestarCard from "../images/pay/mastercard.png";
-import Paypal from "../images/pay/paypal.png";
-import Maestro from "../images/pay/maestro.png";
-import CardBanek from "../images/pay/cardBank.png";
-import Discove from "../images/pay/discover.png";
+import ImgTest from "../../images/1.png";
+import MyOrderData from "../../data/MyOrderData";
+import Visa from "../../images/pay/visa.png";
+import MestarCard from "../../images/pay/mastercard.png";
+import Paypal from "../../images/pay/paypal.png";
+import Maestro from "../../images/pay/maestro.png";
+import CardBanek from "../../images/pay/cardBank.png";
+import Discove from "../../images/pay/discover.png";
 function CheckoutComponent() {
   return (
     <div className="container">

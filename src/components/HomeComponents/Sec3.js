@@ -7,14 +7,14 @@ import M32 from "../../images/Section2/img22.png";
 function Sec3() {
   return (
     <div className="container mx-auto">
-      <div className="row mx-0 px-0 py-5">
+      <div className="row mx-0 px-0 py-1">
         <div className="col-12 col-md-6 h-100">
           <div className="img_number_one w-100 h-100">
             <div className="text_number_one py-4">
               <h2 className="text-right font-main">اصحاب معرض جدد</h2>
               <h5 className="text-right font-main">التجار الجدد</h5>
             </div>
-            <div className="img_number_one_one d-flex my-5">
+            <div className="img_number_one_one d-flex my-1 my-md-5">
               <div className="mx-2">
                 <img src={image_1} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
@@ -63,7 +63,7 @@ function Sec3() {
       </div>
 
       {/*  */}
-      <div className="row mx-0 px-0 py-5">
+      <div className="row mx-0 px-0 pt-5">
         <div className="col-12 col-md-6">
           <div className="img_number_one w-100 h-100">
             <div className="img_number_one_one d-flex">
@@ -79,7 +79,7 @@ function Sec3() {
               <h2 className="text-right font-main font-weight-bold">اصحاب معرض جدد</h2>
               <h5 className="text-right font-main font-weight-bold">التجار الجدد</h5>
             </div>
-            <div className="img_number_one_one d-flex my-5">
+            <div className="img_number_one_one d-flex my-1 my-md-5">
               <div className="mx-2 position-relative">
                 <img src={M32} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">

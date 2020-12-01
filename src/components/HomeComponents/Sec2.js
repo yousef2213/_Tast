@@ -5,7 +5,7 @@ import overs4 from "../../images/over4.svg";
 function Sec2() {
   return (
     <div className="container mx-auto">
-      <div className="row mx-0 my-3 b_g py-2">
+      <div className="row mx-0 my-1 b_g">
         <div className="col col-6 col-sm-6 col-md-3 mx-auto d-flex my-3 dhover">
           <div>
             <img src={overs} className="icon_Sec2" alt="overs" />

@@ -23,10 +23,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2 Icons_number_one_Parent">
                 <img src={i_three} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 1
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الاولي
                   </h6>
                 </div>
@@ -39,10 +39,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2">
                 <img src={i_one} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 2
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الثانية
                   </h6>
                 </div>
@@ -50,10 +50,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2">
                 <img src={i_two} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 3
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الثالثة
                   </h6>
                 </div>
@@ -95,10 +95,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2">
                 <img src={i_three} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 1
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الاولي
                   </h6>
                 </div>
@@ -106,10 +106,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2">
                 <img src={i_one} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 2
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الثانية
                   </h6>
                 </div>
@@ -117,10 +117,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2">
                 <img src={i_two} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 3
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الثالثة
                   </h6>
                 </div>
@@ -142,10 +142,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2 Icons_number_one_Parent">
                 <img src={i_three} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 1
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الاولي
                   </h6>
                 </div>
@@ -158,10 +158,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2">
                 <img src={i_one} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 2
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الثانية
                   </h6>
                 </div>
@@ -169,10 +169,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2">
                 <img src={i_two} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 3
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الثالثة
                   </h6>
                 </div>
@@ -214,10 +214,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2">
                 <img src={i_three} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 1
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الاولي
                   </h6>
                 </div>
@@ -225,10 +225,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2">
                 <img src={i_one} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 2
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الثانية
                   </h6>
                 </div>
@@ -236,10 +236,10 @@ function TogarNumberOneComponent() {
               <div className="mx-2">
                 <img src={i_two} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     تاجر 3
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     تجار الدرجة الثالثة
                   </h6>
                 </div>

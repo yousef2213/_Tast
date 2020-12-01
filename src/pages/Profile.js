@@ -10,7 +10,7 @@ function Merchants() {
       <div className="row mx-0 px-0">
         <Hero />
       </div>
-      <div className="row mx-0 px-0 py-5">
+      <div className="row mx-0 px-0 pt-sm-2 pt-md-5">
         <Hero2 />
       </div>
       <div className="row mx-0 px-0 py-5">

@@ -11,25 +11,25 @@ function Hero2() {
     <div className="container py-5">
       <div className="row">
         <div className="col-12 col-md-6 text-right">
-          <div className="d-flex mb-2">
+          <div className="d-flex mb-4">
             <FaRegUser className="align-self-center info" />
-            <h4 className="font-main">احمد النجار</h4>
+            <h4 className="font-main mb-0">احمد النجار</h4>
           </div>
-          <div className="d-flex mb-3">
+          <div className="d-flex mb-4">
             <GiStarsStack className="align-self-center info" />
-            <h5 className="font-main"> تاجر من الدرجة الاولي</h5>
+            <h5 className="font-main mb-0"> تاجر من الدرجة الاولي</h5>
           </div>
-          <div className="d-flex mb-3">
+          <div className="d-flex mb-4">
             <BiCustomize className="align-self-center info" />
-            <h5 className="font-main">احذية وهواتف</h5>
+            <h5 className="font-main mb-0">احذية وهواتف</h5>
           </div>
-          <div className="d-flex mb-3">
+          <div className="d-flex mb-4">
             <MdEmail className="align-self-center info" />
-            <h5 className="font-main"> technical@support.com</h5>
+            <h5 className="font-main mb-0"> technical@support.com</h5>
           </div>
-          <div className="d-flex mb-3">
+          <div className="d-flex mb-4">
             <FaPhoneAlt className="align-self-center info" />
-            <h5 className="font-main">0123456789 </h5>
+            <h5 className="font-main mb-0">0123456789 </h5>
           </div>
         </div>
 

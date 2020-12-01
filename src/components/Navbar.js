@@ -39,7 +39,7 @@ function Navbar() {
                   <span className="span33">33</span>
                 </div>
                 <div className=" Cart_Div">
-                  <Link to="/Checkout" className="card_nav">
+                  <Link to="/Cart" className="card_nav">
                     <img src={qafferr} className="icon_" alt="qafferr" />
                     <span className="spancart"> {CartItem} </span>
                   </Link>

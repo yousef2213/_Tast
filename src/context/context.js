@@ -63,7 +63,10 @@ class QafeerProvider extends Component {
   Increment = (id) => {
     let tempCart = [...this.state.Cart];
     let tempItem = tempCart.find((item) => item.id === id);
-    tempItem.count++;
+    if(!tempItem){
+      alert("add to Cart First")
+    }else{
+          tempItem.count++;
     tempItem.total = tempItem.count * tempItem.price;
     tempItem.total = parseFloat(tempItem.total.toFixed(2));
     this.setState(
@@ -76,6 +79,7 @@ class QafeerProvider extends Component {
         this.addTotals();
       }
     );
+    }
   };
   decrement = (id) => {
     let tempCart = [...this.state.Cart];
@@ -98,6 +102,18 @@ class QafeerProvider extends Component {
         }
       );
     }
+  };
+  clearCart = () => {
+    this.setState(
+      () => {
+        return {
+          Cart: [],
+        };
+      },
+      () => {
+        this.addTotals();
+      }
+    );
   };
   removeItem = (id) => {
     let tempCart = [...this.state.Cart];
@@ -122,7 +138,9 @@ class QafeerProvider extends Component {
           setSingleProduct: this.setSingleProduct,
           addToCart: this.addToCart,
           Increment: this.Increment,
-          decrement: this.decrement
+          decrement: this.decrement,
+          removeItem: this.removeItem,
+          clearCart: this.clearCart
         }}
       >
         {this.props.children}

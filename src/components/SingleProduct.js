@@ -73,7 +73,7 @@ function SingleProduct() {
               <span className="dec" onClick={() => decrement(SingleProduct.id || 1)}>-</span>
             </div>
             <div className="px-2">
-              <h2 className="h2p">${SingleProduct.total || 0}</h2>
+              <h2 className="h2p">${SingleProduct.price || 0}</h2>
             </div>
           </div>
           <h6 className="text-right pt-3 text-muted">التوصيل مجانا</h6>

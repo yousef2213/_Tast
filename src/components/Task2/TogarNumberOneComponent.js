@@ -3,8 +3,6 @@ import i_two from "../../images/التصنيفات/Image-5.png";
 import i_three from "../../images/التصنيفات/Image-6.png";
 import i_four from "../../images/التصنيفات/Image-7.png";
 import i_five from "../../images/التصنيفات/Image.png";
-import i_six from "../../images/التصنيفات/Image-6.png";
-import i_seven from "../../images/التصنيفات/Image-7.png";
 
 import { AiFillFacebook } from "react-icons/ai";
 import { FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";

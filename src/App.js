@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import TogarNumberOne from "./pages/TogarNumberOne";
 import Category from "./pages/Category";
+import Cart from "./pages/Cart";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/Profile" component={Profile} />
         <Route exact path="/SingleProduct" component={SingleProductPage} />
+        <Route exact path="/Cart" component={Cart} />
         <Route exact path="/Checkout" component={CheckOut} />
         <Route exact path="/Classifications" component={TogarNumberOne} />
         <Route exact path="/category" component={Category} />

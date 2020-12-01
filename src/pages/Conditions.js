@@ -40,17 +40,29 @@ function Conditions() {
                 <td className="text-center tdItem" scope="row">
                   ترويج المنتجات
                 </td>
-                <td className="text-center tdItem checkAi"><AiOutlineCheck /></td>
-                <td className="text-center tdItem checkAi"><AiOutlineCheck /></td>
-                <td className="text-center tdItem checkAi"><AiOutlineClose /></td>
+                <td className="text-center tdItem checkAi">
+                  <AiOutlineCheck />
+                </td>
+                <td className="text-center tdItem checkAi">
+                  <AiOutlineCheck />
+                </td>
+                <td className="text-center tdItem checkAi">
+                  <AiOutlineClose />
+                </td>
               </tr>
               <tr>
                 <td className="text-center tdItem2" scope="row">
                   المنتجات في اول صفحة
                 </td>
-                <td className="text-center tdItem2 checkAi"><AiOutlineCheck /></td>
-                <td className="text-center tdItem2 checkAi"><AiOutlineClose /></td>
-                <td className="text-center tdItem2 checkAi"><AiOutlineClose /></td>
+                <td className="text-center tdItem2 checkAi">
+                  <AiOutlineCheck />
+                </td>
+                <td className="text-center tdItem2 checkAi">
+                  <AiOutlineClose />
+                </td>
+                <td className="text-center tdItem2 checkAi">
+                  <AiOutlineClose />
+                </td>
               </tr>
               <tr>
                 <td className="text-center tdItem" scope="row">
@@ -67,6 +79,18 @@ function Conditions() {
                 <td className="text-center tdItem2">8 ريالات </td>
                 <td className="text-center tdItem2">6 ريالات </td>
                 <td className="text-center tdItem2">مجاناً </td>
+              </tr>
+              <tr className="border-0">
+                <td className="text-center border-0" scope="row"></td>
+                <td className="text-center border-0" scope="row">
+                  <button className=" btn-4trak">اشتراك</button>
+                </td>
+                <td className="text-center border-0" scope="row">
+                  <button className=" btn-4trak">اشتراك</button>
+                </td>
+                <td className="text-center border-0" scope="row">
+                  <button className=" btn-4trak">اشتراك</button>
+                </td>
               </tr>
             </tbody>
           </table>

@@ -53,7 +53,7 @@ function Category() {
                   </div>
                   <h6 className="nameP">{name}</h6>
                   <h6 className="priceP">
-                    ${price} <span className="text-muted">$133 </span>
+                   <span className="text-muted">$133 </span> ${price}
                   </h6>
                 </div>
               </Link>

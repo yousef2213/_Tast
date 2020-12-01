@@ -1097,7 +1097,7 @@ td {
 @media (max-width: 600px) {
   .tdHead {
     font-size: 1rem;
-    padding: 0px 0 !important;
+    padding: 10px 0 !important;
     align-self: center;
     vertical-align: baseline !important;
   }

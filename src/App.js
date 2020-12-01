@@ -9,6 +9,7 @@ import Profile from "./pages/Profile";
 import TogarNumberOne from "./pages/TogarNumberOne";
 import Category from "./pages/Category";
 import Cart from "./pages/Cart";
+import Conditions from "./pages/Conditions";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route exact path="/Checkout" component={CheckOut} />
         <Route exact path="/Classifications" component={TogarNumberOne} />
         <Route exact path="/category" component={Category} />
+        <Route exact path="/Conditions" component={Conditions} />
       </Switch>
       {/* <Footer /> */}
     </div>

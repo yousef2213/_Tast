@@ -87,7 +87,7 @@ function Navbar() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-center" to="/">
+                    <Link className="nav-link text-center" to="/Conditions">
                       تواصل معنا
                     </Link>
                   </li>

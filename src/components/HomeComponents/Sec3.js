@@ -18,10 +18,10 @@ function Sec3() {
               <div className="mx-2">
                 <img src={image_1} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     معرض 1
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     معرض الدرجة الاولي
                   </h6>
                 </div>
@@ -29,10 +29,10 @@ function Sec3() {
               <div className="mx-2">
                 <img src={image_1} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     معرض 2
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     معرض الدرجة الثانية
                   </h6>
                 </div>
@@ -40,10 +40,10 @@ function Sec3() {
               <div className="mx-2">
                 <img src={image_1} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     معرض 3
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     معرض الدرجة الثالثة
                   </h6>
                 </div>
@@ -76,17 +76,17 @@ function Sec3() {
         <div className="col-12 col-md-6 h-100">
           <div className="img_number_one w-100 h-100">
             <div className="text_number_one py-4">
-              <h2 className="text-right font-main">اصحاب معرض جدد</h2>
-              <h5 className="text-right font-main">التجار الجدد</h5>
+              <h2 className="text-right font-main font-weight-bold">اصحاب معرض جدد</h2>
+              <h5 className="text-right font-main font-weight-bold">التجار الجدد</h5>
             </div>
             <div className="img_number_one_one d-flex my-5">
               <div className="mx-2 position-relative">
                 <img src={M32} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     معرض 1
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     معرض الدرجة الاولي
                   </h6>
                 </div>
@@ -94,10 +94,10 @@ function Sec3() {
               <div className="mx-2">
                 <img src={M32} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     معرض 2
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     معرض الدرجة الثانية
                   </h6>
                 </div>
@@ -105,10 +105,10 @@ function Sec3() {
               <div className="mx-2">
                 <img src={M32} className="img-fluid" alt="one" />
                 <div className="py-3 mt-3">
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd1">
                     معرض 3
                   </h6>
-                  <h6 className="text-right font-main font-weight-bold">
+                  <h6 className="text-right font-main font-weight-bold m3rd2">
                     معرض الدرجة الثالثة
                   </h6>
                 </div>

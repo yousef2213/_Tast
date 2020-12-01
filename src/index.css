@@ -38,9 +38,6 @@ button:focus {
   border: 1px solid #ccc;
 }
 
-.imgB {
-  border: 2px solid #cf9833;
-}
 
 .icon {
   font-size: 14px;
@@ -638,12 +635,6 @@ td {
 
 /* Edit */
 
-.rowking {
-  position: absolute;
-  right: 0;  
-  top: 1.8rem;
-
-}
 
 .carousel_home {
   overflow: hidden;
@@ -859,6 +850,17 @@ td {
   margin: 0 !important;
 }
 /*  */
+.rowking {
+  position: absolute;
+  right: 0;  
+  top: 1.8rem;
+}
+
+.imgB {
+  border: 2px solid #cf9833 !important;
+}
+
+
 @media (max-width: 600px) {
   .carousel-indicators {
     margin-right: 0 !important;
@@ -874,7 +876,7 @@ td {
     justify-content: space-between;
     flex-wrap: wrap;
     position: absolute;
-    bottom: -4rem;
+    top: 23rem !important;
   }
 
   .img {
@@ -883,6 +885,7 @@ td {
     margin: 0 2px;
     display: inline-block;
   }
+
 
   .li {
     padding: 10px !important;

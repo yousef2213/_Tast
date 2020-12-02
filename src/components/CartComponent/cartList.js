@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
 import { QafeerContext } from "../../context/context.js";
 import CartItem from "./CartItem";
 
@@ -11,16 +10,11 @@ const CartList = () => {
         <h1 className="text-center text-title my-5 font-main font-weight-bold text-capitalize">
           your cart is currently empty
         </h1>
-        <Link to="/">
-          <button className="btn btn-outline-primary mx-auto">
-            Return Home
-          </button>
-        </Link>
       </div>
     );
   }
   return (
-    <div className="conatiner-fluid">
+    <div className="conatiner">
       <div className="row  mx-0">
         <div className="col">
           {Cart.map((item) => {

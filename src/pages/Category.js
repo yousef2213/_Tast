@@ -20,7 +20,7 @@ function Category() {
   }
   return (
     <div className="container">
-      <div className="row bkws">
+      <div className="row my-3">
         <div className="col-12 text-right my-3">
           <div className="form-group">
             <select

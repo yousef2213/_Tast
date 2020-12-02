@@ -9,12 +9,12 @@ import CardBanek from "../../images/pay/cardBank.png";
 import Discove from "../../images/pay/discover.png";
 import { QafeerContext } from "../../context/context";
 function CheckoutComponent() {
-  const { Cart = [] , Total} = useContext(QafeerContext);
-  let Toggle = ''
+  const { Cart = [], Total } = useContext(QafeerContext);
+  let Toggle = "";
   if (Cart.length === 0) {
-    Toggle = <h3 className="font-main py-4 text-center">Cart Empty</h3>
+    Toggle = <h3 className="font-main py-4 text-center">Cart Empty</h3>;
   } else {
-    Toggle =     Cart.map(({ name, amount, id ,img, price}) => {
+    Toggle = Cart.map(({ name, amount, id, img, price }) => {
       return (
         <React.Fragment key={id}>
           <div className="d-flex justify-content-between order_1">
@@ -36,8 +36,7 @@ function CheckoutComponent() {
           <hr className="w-100 m-0 px-0" />
         </React.Fragment>
       );
-  });
-  
+    });
   }
   return (
     <div className="container">
@@ -120,7 +119,9 @@ function CheckoutComponent() {
               <hr className="w-100 m-0 px-0" />
               <div className="d-flex justify-content-between p-4">
                 <h3 className="font-main">الاجمالي</h3>
-                <h4 className="font-main font-weight-bold textmyoe1">${Total + 1.99}</h4>
+                <h4 className="font-main font-weight-bold textmyoe1">
+                  ${Total + 1.99}
+                </h4>
               </div>
             </div>
 

@@ -37,18 +37,16 @@ function Footer() {
         </div>
         <div className="col-12 col-md-2">
           <ul className="text-right" style={{ listStyle: "none" }}>
-            <li className="d-inline-block py-2">
-              <Link className="afooter" to="/">
+            <li className="d-inline-block py-2 font-main font-weight-bold">
                 حسابي
-              </Link>
             </li>
             <li className="pb-2">
-              <Link className="afooter" to="/">
+              <Link className="afooter" to="/حسابي">
                 الملف الشخصي
               </Link>
             </li>
             <li className="pb-2">
-              <Link className="afooter" to="/">
+              <Link className="afooter" to="/Cart">
                 سلة المشتريات
               </Link>
             </li>
@@ -58,7 +56,7 @@ function Footer() {
               </Link>
             </li>
             <li className="pb-2">
-              <Link className="afooter" to="/SingleProduct">
+              <Link className="afooter" to="/Checkout">
                 طلباتي
               </Link>
             </li>
@@ -66,18 +64,16 @@ function Footer() {
         </div>
         <div className="col-12 col-md-2">
           <ul className="text-right" style={{ listStyle: "none" }}>
-            <li className="d-inline-block py-2">
-              <Link className="afooter" to="/">
+            <li className="d-inline-block py-2 font-main font-weight-bold">
                 روابط سريعة
-              </Link>
             </li>
             <li className="pb-2">
-              <Link className="afooter" to="/">
+              <Link className="afooter" to="/الاشتراك">
                 الاشتراكات
               </Link>
             </li>
             <li className="pb-2">
-              <Link className="afooter" to="/">
+              <Link className="afooter" to="/Signin">
                 تسجيل الدخول
               </Link>
             </li>
@@ -87,12 +83,12 @@ function Footer() {
               </Link>
             </li>
             <li className="pb-2">
-              <Link className="afooter" to="/Merchants">
+              <Link className="afooter" to="/التجار">
                 التجار
               </Link>
             </li>
             <li className="pb-2">
-              <Link className="afooter" to="/">
+              <Link className="afooter" to="/category">
                 المنتجات
               </Link>
             </li>
@@ -101,10 +97,8 @@ function Footer() {
 
         <div className="col-12 col-md-2">
           <ul className="text-right" style={{ listStyle: "none" }}>
-            <li className="d-inline-block py-2">
-              <Link className="afooter" to="/">
+            <li className="d-inline-block py-2 font-main font-weight-bold">
                 المعلومات والخصوصية
-              </Link>
             </li>
             <li className="pb-2">
               <Link className="afooter" to="/">
@@ -136,10 +130,8 @@ function Footer() {
 
         <div className="col-12 col-md-2">
           <ul className="text-right" style={{ listStyle: "none" }}>
-            <li className="d-inline-block py-2">
-              <Link className="afooter" to="/">
+            <li className="d-inline-block py-2 font-main font-weight-bold">
                 اتصل بنا
-              </Link>
             </li>
             <li className="pb-2">
               <Link className="afooter" to="/">

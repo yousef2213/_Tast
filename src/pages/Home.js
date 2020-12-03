@@ -8,9 +8,9 @@ import Hero from "../components/Hero";
 
 function Home() {
   return (
-    <div className="container-fluid">
-      <div className="row mx-0 mb-5 mt-3">
-        <div className="col-12 carousel_home">
+    <div className="container-fluid mx-0 px-0">
+      <div className="row mx-0 mb-3 mt-3">
+        <div className="col-12 col-md-11 mx-auto carousel_home">
           <Carousel />
         </div>
       </div>
@@ -19,7 +19,7 @@ function Home() {
       <LastHome />
       <Hero />
       <div className="row mx-0 px-0 py-5">
-        <div className="container">
+        <div className="container-fluid mx-0 px-0">
           <div className="row mx-0 pb-3">
             <div className="col-12 text-right myproduct mx-0">
               <h4 className="font-main">منتجات مميزة</h4>

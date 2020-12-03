@@ -79,7 +79,7 @@ function Footer() {
             </li>
             <li className="pb-2">
               <Link className="afooter" to="/">
-                الرثيسية
+                الرئيسية
               </Link>
             </li>
             <li className="pb-2">

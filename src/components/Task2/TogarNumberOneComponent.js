@@ -72,7 +72,6 @@ function TogarNumberOneComponent() {
       </div>
 
       {/* Row 2 */}
-
       <div className="row mx-0 px-0 py-5">
         <div className="col-12 col-md-6">
           <div className="img_number_one w-100 h-100">

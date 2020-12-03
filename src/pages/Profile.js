@@ -1,5 +1,4 @@
 import React from "react";
-import { RiArrowUpDownFill } from "react-icons/ri";
 import Hero from "../components/Hero";
 import Hero2 from "../components/Hero2";
 import Products from "../components/Products";

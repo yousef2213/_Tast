@@ -10,8 +10,8 @@ import { QafeerContext } from "../context/context";
 function Navbar() {
   const { CartItem, Total } = useContext(QafeerContext);
   return (
-    <div className="container-fluid fir">
-      <div className="container">
+    <>
+      <div className="container mx-auto p-sm-0 p-md-2">
         <div className="row mx-0">
           <div className="col-12 px-0 d-flex justify-content-between">
             <div className="d-flex logo_nav">
@@ -51,9 +51,10 @@ function Navbar() {
             </div>
           </div>
         </div>
-
+      </div>
+      <div className="container-fluid mx-0 px-0 fir">
         <div className="row mx-0">
-          <div className="col-12">
+          <div className="col-12 col-md-11 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light Nav">
               <h5
                 className="navbar-brand font-main Sections mr-0 my-0 py-2 C_p awl"
@@ -122,7 +123,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

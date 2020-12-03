@@ -19,9 +19,8 @@ function SingleProduct() {
 
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-0 my-3">
       <div className="row mx-0">
-
         <div className="col-12 col-md-6 d-flex mx-auto single mb-3 h-100">
           <img src={SingleProduct.img || Product} className="DefaultSrc w-100 d-block" alt="Product" />
           <div className="rowking mb-3">

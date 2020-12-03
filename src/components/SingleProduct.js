@@ -11,7 +11,7 @@ import CardBanek from "../images/pay/cardBank.png";
 import Discove from "../images/pay/discover.png";
 import { QafeerContext } from "../context/context";
 function SingleProduct() {
-  const { ValueInput, addToCart, SingleProduct = {},Increment , decrement} = useContext(QafeerContext);
+  const { addToCart, SingleProduct = {}} = useContext(QafeerContext);
   const ChangeSrc = (e) => {
     let DefaultSrc = document.querySelector(".DefaultSrc");
     DefaultSrc.src = e.target.src;
@@ -65,15 +65,12 @@ function SingleProduct() {
               <AiOutlineHeart className="heart" />
             </div>
             <div className="btnIn px-2">
-              <button className="d-block w-100 btnadd" onClick={() => addToCart(SingleProduct.id)}>
+              <button className="d-block w-100 btnadd mb-0" onClick={() => addToCart(SingleProduct.id)}>
                 اضافة لمشتريات النقير
               </button>
-              <input className="form-control inp" defaultValue={SingleProduct.count} />
-              <span className="inc" onClick={() => Increment(SingleProduct.id || 1)}>+</span>
-              <span className="dec" onClick={() => decrement(SingleProduct.id || 1)}>-</span>
             </div>
-            <div className="px-2">
-              <h2 className="h2p">${SingleProduct.price || 0}</h2>
+            <div className="px-2 align-self-center">
+              <h2 className="h2p mb-0 align-self-center">${SingleProduct.price || 0}</h2>
             </div>
           </div>
           <h6 className="text-right pt-3 text-muted">التوصيل مجانا</h6>

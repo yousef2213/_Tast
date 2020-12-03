@@ -5,6 +5,7 @@ import Info3 from "./Info3";
 import { FaUserAlt, FaShoppingBag } from "react-icons/fa"
 import { HiLocationMarker } from "react-icons/hi"
 import { BsFolderSymlinkFill } from "react-icons/bs"
+import { Link } from "react-router-dom";
 function ProfileInformationComponent() {
   return (
   <div className="row mx-0 my-5">
@@ -34,17 +35,17 @@ function ProfileInformationComponent() {
           </div>
           <h6 className="h6sidebar"> طلباتي</h6>
         </a>
-        <a className="nav-link nav-link-one" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+        <Link className="nav-link nav-link-one"  data-toggle="pill" to="/" role="tab" aria-controls="v-pills-settings" aria-selected="false">
           <div className="lastSectionSideBar text-center">
             <div className="divimgSidebar">
                 <BsFolderSymlinkFill className="imgSidebar" />
             </div>
           </div>
           <h6 className="h6sidebar"> تسجيل الخروج</h6>
-        </a>
+        </Link>
       </div>
     </div>
-    <div className="col-12 col-md-9">
+    <div className="col-12 col-md-9 mx-0 px-0">
       <div className="tab-content" id="v-pills-tabContent">
         <div className="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
           <Info1 />
@@ -55,7 +56,6 @@ function ProfileInformationComponent() {
         <div className="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
           <Info3 />
         </div>
-        <div className="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
       </div>
     </div>
   </div>

@@ -18,16 +18,16 @@ export default function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/Signin" component={Signin} />
-        <Route exact path="/ProfileInformation" component={ProfileInformation} />
-        <Route exact path="/حسابي" component={Profile} />
-        <Route exact path="/الاشتراك" component={Conditions} />
-        <Route exact path="/SingleProduct" component={SingleProductPage} />
-        <Route exact path="/Cart" component={Cart} />
-        <Route exact path="/Checkout" component={CheckOut} />
-        <Route exact path="/التجار" component={TogarNumberOne} />
-        <Route exact path="/category" component={Category} />
-      </Switch> 
+        <Route path="/Signin" component={Signin} />
+        <Route path="/ProfileInformation" component={ProfileInformation} />
+        <Route path="/حسابي" component={Profile} />
+        <Route path="/الاشتراك" component={Conditions} />
+        <Route path="/SingleProduct" component={SingleProductPage} />
+        <Route path="/Cart" component={Cart} />
+        <Route path="/Checkout" component={CheckOut} />
+        <Route path="/التجار" component={TogarNumberOne} />
+        <Route path="/category" component={Category} />
+      </Switch>
       <Footer />
     </div>
   );

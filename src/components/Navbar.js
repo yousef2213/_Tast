@@ -68,7 +68,7 @@ function Navbar() {
               </h5>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mx-auto">
-                  <div className="input_navbar ml-auto mr-0 d-md-none my-2">
+                  <div className="input_navbar w-100 mr-0 d-md-none my-2">
                     <input
                       type="text"
                       placeholder="ابحث هنا"

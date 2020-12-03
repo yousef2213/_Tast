@@ -5,7 +5,6 @@ import Sec3 from "../components/HomeComponents/Sec3.js";
 import Products from "../components/Products.js";
 import LastHome from "../components/HomeComponents/LastHome.js";
 import Hero from "../components/Hero";
-import ProductsLaptop from "../data/ProductsLaptop";
 
 function Home() {
   return (

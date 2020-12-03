@@ -77,10 +77,10 @@ function Sec3() {
         <div className="col-12 col-md-6 h-100">
           <div className="img_number_one w-100 h-100">
             <div className="text_number_one py-4">
-              <h2 className="text-right font-main font-weight-bold">
+              <h2 className="text-right font-main font-weight-bold m3rd1">
                 اصحاب معرض جدد
               </h2>
-              <h5 className="text-right font-main font-weight-bold">
+              <h5 className="text-right font-main font-weight-bold m3rd2">
                 التجار الجدد
               </h5>
             </div>

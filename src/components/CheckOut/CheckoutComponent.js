@@ -9,7 +9,7 @@ import CardBanek from "../../images/pay/cardBank.png";
 import Discove from "../../images/pay/discover.png";
 import { QafeerContext } from "../../context/context";
 function CheckoutComponent() {
-  const { Cart = [], Total } = useContext(QafeerContext);
+  const { Cart = [], Total, getCheckout } = useContext(QafeerContext);
   let Toggle = "";
   if (Cart.length === 0) {
     Toggle = <h3 className="font-main py-4 text-center">Cart Empty</h3>;
@@ -51,43 +51,43 @@ function CheckoutComponent() {
                 <label className="label">
                   الاسم <span className="star">* </span>
                 </label>
-                <input type="text" className="input_order" />
+                <input type="text" className="input_order" id="nameCheckOut" />
               </div>
               <div className="my-3">
                 <label className="label">
                   الدولة <span className="star">* </span>
                 </label>
-                <input type="text" className="input_order" />
+                <input type="text" className="input_order" id="CountryCheckOut" />
               </div>
               <div className="my-3">
                 <label className="label">
                   المدينة <span className="star">* </span>
                 </label>
-                <input type="text" className="input_order" />
+                <input type="text" className="input_order" id="CityCheckOut" />
               </div>
               <div className="my-3">
                 <label className="label">
                   عنوان المنزل بالتفصيل <span className="star">* </span>
                 </label>
-                <input type="text" className="input_order" />
+                <input type="text" className="input_order" id="DetilsAddressCheckOut" />
               </div>
               <div className="my-3">
                 <label className="label">
                   البريد الرمزي <span className="star">* </span>
                 </label>
-                <input type="text" className="input_order" />
+                <input type="text" className="input_order" id="codeCheckOut" />
               </div>
               <div className="my-3">
                 <label className="label">
                   رقم الهاتف <span className="star">* </span>
                 </label>
-                <input type="text" className="input_order" />
+                <input type="number" className="input_order" id="phoneCheckOut" />
               </div>
               <div className="my-3">
                 <label className="label">
                   البريد الالكتروني <span className="star">* </span>
                 </label>
-                <input type="text" className="input_order" />
+                <input type="email" className="input_order" id="emailCheckOut" />
               </div>
             </form>
           </div>
@@ -150,35 +150,39 @@ function CheckoutComponent() {
                         type="text"
                         className="input_order"
                         placeholder="7911**** **** **** ****"
+                        id="numberCard"
                       />
                     </div>
                     <div className="my-3 dflex_small">
                       <div>
                         <label className="label">رمز الامان</label>
                         <input
-                          type="text"
+                          type="number"
                           className="input_order"
                           placeholder="***"
+                          id="SecCard"
                         />
                       </div>
                       <div>
                         <label className="label">تاريخ الانتهاء </label>
                         <input
-                          type="text"
+                          type="number"
                           className="input_order"
                           placeholder="00/00"
+                          id="DataEndCard"
                         />
                       </div>
                     </div>
                     <div className="my-3">
                       <label className="label">اسم صاحب البطاقة</label>
-                      <input type="text" className="input_order" />
+                      <input type="text" className="input_order" id="nameUserCard" />
                     </div>
                     <div className="my-3">
                       <input
                         type="submit"
                         className="input_order_btn font-main"
                         value="اتمام الدفع"
+                        onClick={getCheckout}
                       />
                     </div>
                   </div>

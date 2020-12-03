@@ -5,7 +5,7 @@ function Info3() {
     <div className="container-fluid mx-auto">
       <div className="row">
         <div className="col-12 mx-0 px-0">
-          <table className="InfoTabel">
+          <table className="InfoTabel my-2">
             <tbody>
               <tr>
                 <td className="text-center tdtabelinfo">رقم الطلب</td>
@@ -15,18 +15,18 @@ function Info3() {
                 <td className="text-center tdtabelinfo">الاجرائات</td>
               </tr>
               <tr>
-                <td className="text-center td">#12345</td>
-                <td className="text-center td">$329.99</td>
-                <td className="text-center td">قيد التوصيل</td>
-                <td className="text-center td">$329.99</td>
-                <td className="text-center td">عرض الطلب</td>
+                <td className="text-center tdtabelinfo">#12345</td>
+                <td className="text-center tdtabelinfo">$329.99</td>
+                <td className="text-center tdtabelinfo">قيد التوصيل</td>
+                <td className="text-center tdtabelinfo">$329.99</td>
+                <td className="text-center tdtabelinfo">عرض الطلب</td>
               </tr>
               <tr>
-                <td className="text-center td">#12345</td>
-                <td className="text-center td">$329.99</td>
-                <td className="text-center td">قيد التوصيل</td>
-                <td className="text-center td">$329.99</td>
-                <td className="text-center td">عرض الطلب</td>
+                <td className="text-center tdtabelinfo">#12345</td>
+                <td className="text-center tdtabelinfo">$329.99</td>
+                <td className="text-center tdtabelinfo">قيد التوصيل</td>
+                <td className="text-center tdtabelinfo">$329.99</td>
+                <td className="text-center tdtabelinfo">عرض الطلب</td>
               </tr>
             </tbody>
           </table>

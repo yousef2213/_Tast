@@ -16,7 +16,8 @@
 a:hover {
   text-decoration: none !important;
 }
-.cp{
+
+.cp {
   cursor: pointer;
 }
 
@@ -1027,9 +1028,6 @@ td {
   margin: 0 auto;
 }
 
-.listicon {
-  font-size: 1.8rem;
-}
 
 .awl {
   font-size: 1rem !important;
@@ -1038,9 +1036,12 @@ td {
   justify-content: space-around;
 }
 
-/* #navbarNav > .navbar-nav > .nav-item.active > a {
-  color: #cf9833 !important;
-} */
+.listicon {
+  font-size: 1.8rem;
+  margin-left: auto !important;
+  margin-right: 1rem !important;
+}
+
 .nav_link_color {
   color: #000 !important;
   font-weight: 500 !important;

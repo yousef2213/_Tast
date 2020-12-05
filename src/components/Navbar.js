@@ -21,18 +21,18 @@ function Navbar() {
     let data = await result.json();
     setCatergory(data.cats_list)
   }
-  var WishList_Count;
-  if(Login){
-    if(WishList.length === 0){
-      WishList_Count = 0
-    }
-    else{
-      WishList_Count = WishList.wishlist_data.length
-    }
-  }
-  else{
-    WishList_Count = 0
-  }
+  // var WishList_Count;
+  // if(Login){
+  //   if(WishList.length === 0){
+  //     WishList_Count = 0
+  //   }
+  //   else{
+  //     WishList_Count = WishList.wishlist_data.length
+  //   }
+  // }
+  // else{
+  //   WishList_Count = 0
+  // }
   return (
     <>
       <div className="container mx-auto p-sm-0 p-md-2">
@@ -63,7 +63,7 @@ function Navbar() {
               <div className="Heart_Div">
                 <Link to="/WishList" className="card_nav cp">
                   <img src={qafferrHeart} className="icon_" alt="qafferr" />
-                  <span className="span33">{WishList_Count}</span>
+                  <span className="span33">0</span>
                 </Link>
               </div>
               <div className=" Cart_Div">

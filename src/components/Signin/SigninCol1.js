@@ -5,7 +5,7 @@ import { AiFillFacebook } from "react-icons/ai";
 import { FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 import { QafeerContext } from "../../context/context";
 function SigninCol1() {
-  const { getSignIn } = useContext(QafeerContext);
+  const { getSignIn,mess } = useContext(QafeerContext);
   return (
     <form className="my-4">
       <h4 className="text-right font-main font-weight-bold pb-3">
@@ -13,14 +13,15 @@ function SigninCol1() {
       </h4>
       <div className="my-3 emailicon">
         <label className="label">بريدك الالكتروني</label>
-        <input type="email" className="input_order pr-5" id="valueemail" />
+        <input type="email" name="email" className="input_order pr-5" id="valueemail" />
         <img src={emailIcon} className="icon_email" alt="emailIcon" />
       </div>
       <div className="my-3 emailicon">
         <label className="label">تاكيد كلمة المرور </label>
-        <input type="password" className="input_order pr-5" id="valuepassword" />
+        <input type="password" name="password" className="input_order pr-5" id="valuepassword" />
         <img src={padlockIcon} className="icon_email" alt="emailIcon" />
       </div>
+      <h6 className="text-danger w-100 text-right font-main">{mess}</h6>
       <div className="text-right d-flex">
         <div>
           <button

@@ -5,18 +5,46 @@ import qafferrHeart from "../images/heart.svg";
 import userImg from "../images/User.svg";
 import Logo from "../images/logo.png";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { QafeerContext } from "../context/context";
+import React from "react";
 function Navbar() {
-  const { CartItem, Total } = useContext(QafeerContext);
+  const [Catergory, setCatergory] = useState([]);
+  const { CartItem, WishList = [], Total, setTest,Login } = useContext(QafeerContext);
+  useEffect(() => {
+    getCatergory();
+  }, []);
+
+  async function getCatergory() {
+    let URL_CATEGORY = "https://qafeer.net/wp-json/bestgator/v1/listMainCats?per_page=10&page_num=1";
+    let result = await fetch(URL_CATEGORY);
+    let data = await result.json();
+    setCatergory(data.cats_list)
+  }
+  var WishList_Count;
+  if(Login){
+    if(WishList.length === 0){
+      WishList_Count = 0
+    }
+    else{
+      WishList_Count = WishList.wishlist_data.length
+    }
+  }
+  else{
+    WishList_Count = 0
+  }
   return (
     <>
       <div className="container mx-auto p-sm-0 p-md-2">
         <div className="row mx-0">
           <div className="col-12 px-0 d-flex justify-content-between">
             <div className="d-flex logo_nav">
-              <img src={Logo} className="img-fluid" alt="" />
-              <span className="span_nav_logo">لعرض منتجات التجار والمعارض</span>
+              <Link to="/">
+                <img src={Logo} className="img-fluid" alt="" />
+                <span className="span_nav_logo">
+                  لعرض منتجات التجار والمعارض
+                </span>
+              </Link>
             </div>
             {/*  */}
             <div className="input_navbar d-none d-md-block">
@@ -33,9 +61,9 @@ function Navbar() {
                 <img src={userImg} className="icon_" alt="qafferr" />
               </Link>
               <div className="Heart_Div">
-                <Link to="/Signin" className="card_nav">
+                <Link to="/WishList" className="card_nav cp">
                   <img src={qafferrHeart} className="icon_" alt="qafferr" />
-                  <span className="span33">0</span>
+                  <span className="span33">{WishList_Count}</span>
                 </Link>
               </div>
               <div className=" Cart_Div">
@@ -65,7 +93,6 @@ function Navbar() {
                 aria-label="Toggle navigation"
               >
                 <BsList className="listicon text-white" />
-                <span className="aksam text-white">الأقسام</span>
               </h5>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mx-auto">
@@ -92,6 +119,30 @@ function Navbar() {
                     >
                       التجار
                     </Link>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a
+                      className="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      الاقسام
+                    </a>
+                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                      {Catergory.map(({ id, name }) => {
+                        return (
+                          <React.Fragment key={id}>
+                            <Link className="dropdown-item" onClick={() => setTest(id)} to={`/category/${name}`}>
+                              {name}
+                            </Link>
+                          </React.Fragment>
+                        );
+                      })}
+                    </div>
                   </li>
                   <li className="nav-item">
                     <Link

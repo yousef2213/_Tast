@@ -11,24 +11,39 @@ import CardBanek from "../images/pay/cardBank.png";
 import Discove from "../images/pay/discover.png";
 import { QafeerContext } from "../context/context";
 function SingleProduct() {
-  const { addToCart, SingleProduct = {}} = useContext(QafeerContext);
+  const { addToCart, SingleProduct = {} ,addToWishlist} = useContext(QafeerContext);
   const ChangeSrc = (e) => {
     let DefaultSrc = document.querySelector(".DefaultSrc");
     DefaultSrc.src = e.target.src;
   };
-
-
+  const {
+    images = [],
+    name,
+    regular_price,
+    sale_price,
+    id
+  } = SingleProduct;
   return (
     <div className="container mx-auto px-0 my-3">
       <div className="row mx-0">
         <div className="col-12 col-md-6 d-flex mx-auto single mb-3 h-100">
-          <img src={SingleProduct.img || Product} className="DefaultSrc w-100 d-block" alt="Product" />
+          <img
+            src={images[0]}
+            className="DefaultSrc w-100 d-block"
+            alt="Product"
+          />
           <div className="rowking mb-3">
-            <img src={Product} onClick={ChangeSrc} className="img imgB" alt="Product"/>
-            <img src={Product2} onClick={ChangeSrc} className="img" alt="Product"/>
-            <img src={Product2} onClick={ChangeSrc} className="img" alt="Product"/>
-            <img src={Product} onClick={ChangeSrc} className="img" alt="Product" />
-            <img src={Product} onClick={ChangeSrc} className="img" alt="Product" />
+            {images.map((img) => {
+              return (
+                <img
+                key={Math.random() * images.length}
+                  src={img}
+                  onClick={ChangeSrc}
+                  className="img"
+                  alt="Product"
+                />
+              );
+            })}
           </div>
         </div>
 
@@ -42,7 +57,7 @@ function SingleProduct() {
             <BsFillStarFill className="icon" />
           </div>
           <h3 className="text-right mt-2 mb-5 font-main font-weight-bold">
-           {SingleProduct.name}
+            {name}
           </h3>
           <div className="d-flex justify-content-start">
             <h6 className="mb-0 pb-0 align-self-center font-main font-weight-bold">
@@ -61,15 +76,20 @@ function SingleProduct() {
           </div>
           <div className="d-flex  justify-content-center bkw">
             <div className="px-2">
-              <AiOutlineHeart className="heart" />
+              <AiOutlineHeart className="heart" onClick={() => addToWishlist(id)} />
             </div>
             <div className="btnIn px-2">
-              <button className="d-block w-100 btnadd mb-0" onClick={() => addToCart(SingleProduct.id)}>
+              <button
+                className="d-block w-100 btnadd mb-0 py-2 px-2"
+                onClick={() => addToCart(SingleProduct.id)}
+              >
                 اضافة لمشتريات النقير
               </button>
             </div>
             <div className="px-2 align-self-center">
-              <h2 className="h2p mb-0 align-self-center">${SingleProduct.price || 0}</h2>
+              <h4 className="h2p mb-0 align-self-center">
+                <span className="text-muted sale_price">${regular_price || 0}</span> ${sale_price}
+              </h4>
             </div>
           </div>
           <h6 className="text-right pt-3 text-muted">التوصيل مجانا</h6>

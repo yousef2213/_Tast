@@ -1,5 +1,7 @@
 import React from "react";
-import Section from "./Section";
+import Comments from "./Comments";
+import More from "./More";
+import Section from "./Section.js";
 
 
 function Nav() {
@@ -20,13 +22,13 @@ function Nav() {
           </ul>
           <div className="tab-content" id="myTabContent">
             <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <Section/>
+              <Section />
             </div>
-            <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <Section/>
+            <div className="tab-pane fade py-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <More/>
             </div>
-            <div className="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-              <Section/>
+            <div className="tab-pane fade py-3" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <Comments/>
             </div>
           </div>
 

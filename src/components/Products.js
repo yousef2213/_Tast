@@ -1,28 +1,35 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 import { BsFillStarFill } from "react-icons/bs";
 import { AiOutlineRedo } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import axios from "axios";
 import { QafeerContext } from "../context/context";
 
 function Products() {
-  const { AllProducts, addToCart, setSingleProduct } = useContext(QafeerContext);
+  const [Products, setProducts] = useState([]);
+  const { AllProducts = [], setSingleProduct } = useContext(QafeerContext);
   useEffect(() => {
-    const data = axios.get(
-      "https://wardi.me/wp-json/bestgator/v1/getSingleProduct?product_id=22241"
-    );
+    // let Products = AllProducts.filter((product) => product.id <= 80);
+    setProducts(AllProducts.filter((product) => product.id <= 80));
   }, []);
+
+  // const seeMoreProducts = () => {
+  //   setProducts(AllProducts.filter((product) => product.id <= 100));
+  // };
   return (
     <div className="container">
-      <div className="row bkws">
-        {AllProducts.map(({ id, name, img, price }) => {
+      <div className="row">
+        {Products.map(({ id, name, image, price }) => {
           return (
-            <div key={id} onClick={() => setSingleProduct(id)} className="col-12 col-md-2 my-2 text-right">
+            <div
+              key={id}
+              onClick={() => setSingleProduct(id)}
+              className="col-12 col-md-2 my-2 text-right mx-0"
+            >
               <Link to="/SingleProduct" className="text-dark">
                 <div className="first">
-                  <img src={img} className="imgProd" alt="img" />
+                  <img src={image} className="imgProd" alt="img" />
                   <div className="icons text-right">
                     <BsFillStarFill className="iconP text-muted" />
                     <BsFillStarFill className="iconP" />
@@ -31,16 +38,13 @@ function Products() {
                     <BsFillStarFill className="iconP" />
                   </div>
                   <h6 className="nameP">{name}</h6>
-                  <h6 className="priceP">
-                    ${price} <span className="text-muted">$133 </span>
-                  </h6>
                 </div>
               </Link>
             </div>
           );
         })}
         <div className="col-12">
-          <button className="font-main btn_more">
+          <button className="font-main btn_more" onClick={() =>  setProducts(AllProducts.filter((product) => product.id <= 200))}>
             <AiOutlineRedo className="ml-2" /> عرض المزيد
           </button>
         </div>

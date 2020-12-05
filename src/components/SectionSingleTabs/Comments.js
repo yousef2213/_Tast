@@ -1,5 +1,5 @@
 import React from "react";
-import Person from "../images/3.png";
+import Person from "../../images/3.png";
 import { BsFillStarFill } from "react-icons/bs";
 function Comments() {
   return (

@@ -1,6 +1,6 @@
 import banner from "../../images/bannerbig.png"
-import banne2r from "../../images/CALL TO ACTION.png"
-import {BsArrowLeftShort, BsArrowRightShort} from "react-icons/bs"
+import banner2 from "../../images/bannerbig2.png"
+import banner3 from "../../images/bannerbig3.png"
 
 function Carousel() {
   return (
@@ -28,10 +28,10 @@ function Carousel() {
                 <img src={banner} className="img-Coarousl" alt="banner" />
               </div>
               <div className="carousel-item position-relative">
-                <img src={banner} className="img-Coarousl" alt="banner" />
+                <img src={banner2} className="img-Coarousl" alt="banner" />
               </div>
               <div className="carousel-item position-relative">
-                 <img src={banner} className="img-Coarousl" alt="banner" />
+                 <img src={banner3} className="img-Coarousl" alt="banner" />
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ import { FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 import { QafeerContext } from "../../context/context";
 
 function SigninCol2() {
-  const { getSubscription } = useContext(QafeerContext)
+  const { getSubscription, messSubscription } = useContext(QafeerContext)
   return (
     <div className="my-4">
       <h4 className="text-right font-main font-weight-bold pb-3">الاشتراك</h4>
@@ -44,6 +44,7 @@ function SigninCol2() {
           <input type="password" className="input_order pr-5" id="passconfirmSubscription" />
           <img src={padlockIcon} className="icon_email" alt="emailIcon" />
         </div>
+        <h6 className="text-danger w-100 text-right font-main">{messSubscription}</h6>
         <div className="text-right">
           <button className="input_order_btn my-0 font-main d-inline-block w-25 text-center ml-autopx-5" onClick={getSubscription}>
             اشتراك

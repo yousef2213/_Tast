@@ -1,140 +1,50 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { BsFillStarFill } from "react-icons/bs";
 import { AiOutlineRedo } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-import axios from "axios";
 import { QafeerContext } from "../context/context";
-
+import loading from "../images/loading.svg"
 function Category() {
-  const { AllProducts, addToCart, setSingleProduct } = useContext(
+  const { setTest } = useContext(
     QafeerContext
   );
+  const [Catergory, setCatergory] = useState([]);
   useEffect(() => {
-    const data = axios.get(
-      "https://wardi.me/wp-json/bestgator/v1/getSingleProduct?product_id=22241"
-    );
+    getCatergory();
   }, []);
-  const ShowMore = () => {
-    document.querySelector("#more").classList.remove("d-none")
+  async function getCatergory() {
+    let URL_CATEGORY =
+      "https://qafeer.net/wp-json/bestgator/v1/listMainCats?per_page=10&page_num=1";
+    let result = await fetch(URL_CATEGORY);
+    let data = await result.json();
+    setCatergory(data.cats_list);
+  }
+  if(Catergory.length === 0){
+    return(
+      <div className="container mx-auto px-0 my-3">
+      <div className="row mx-0 py-5">
+        <div className="col-12 mx-auto text-center">
+          <img src={loading} alt="loading" />
+          <h2 className="text-uppercase text-orange text-center py-3">
+            loading Category ...
+          </h2>
+        </div>
+      </div>
+    </div>
+    )
   }
   return (
     <div className="container">
-      <div className="row my-3">
-        <div className="col-12 text-right my-3">
-          <div className="form-group">
-            <select
-              className="form-control select"
-              id="exampleFormControlSelect1"
-            >
-              <option>ترتيب بواسطة تجار الدرجة الاولي</option>
-              <option>ترتيب بواسطة تجار الدرجة الاولي</option>
-              <option>ترتيب بواسطة تجار الدرجة الاولي</option>
-            </select>
-          </div>
+      <div className="row my-3 mx-0">
+        <div className="col-12 py-5">
+          <h3 className="font-main font-weight-bold text-muted text-center">Categorys</h3>
         </div>
-        {AllProducts.map(({ id, name, img, price }) => {
+        {Catergory.map(({ id, name, image }) => {
           return (
-            <div
-              key={id}
-              onClick={() => setSingleProduct(id)}
-              className="col-12 col-md-2 my-2 text-right"
-            >
-              <Link to="/SingleProduct" className="text-dark">
-                <div className="first allPrducts">
-                  <img src={img} className="imgProd" alt="img" />
-                  <span className="spancatgory">50%-</span>
-                  <div className="icons text-right">
-                    <BsFillStarFill className="iconP text-muted" />
-                    <BsFillStarFill className="iconP" />
-                    <BsFillStarFill className="iconP" />
-                    <BsFillStarFill className="iconP" />
-                    <BsFillStarFill className="iconP" />
-                  </div>
-                  <h6 className="nameP">{name}</h6>
-                  <h6 className="priceP">
-                   <span className="text-muted">$133 </span> ${price}
-                  </h6>
-                </div>
-              </Link>
-            </div>
-          );
-        })}
-        {AllProducts.map(({ id, name, img, price }) => {
-          return (
-            <div
-              key={id}
-              onClick={() => setSingleProduct(id)}
-              className="col-12 col-md-2 my-2 text-right"
-            >
-              <Link to="/SingleProduct" className="text-dark">
-                <div className="first allPrducts">
-                  <img src={img} className="imgProd" alt="img" />
-                  <span className="spancatgory">50%-</span>
-                  <div className="icons text-right">
-                    <BsFillStarFill className="iconP text-muted" />
-                    <BsFillStarFill className="iconP" />
-                    <BsFillStarFill className="iconP" />
-                    <BsFillStarFill className="iconP" />
-                    <BsFillStarFill className="iconP" />
-                  </div>
-                  <h6 className="nameP">{name}</h6>
-                  <h6 className="priceP">
-                    ${price} <span className="text-muted">$133 </span>
-                  </h6>
-                </div>
-              </Link>
-            </div>
-          );
-        })}
-                {AllProducts.map(({ id, name, img, price }) => {
-          return (
-            <div
-              key={id}
-              onClick={() => setSingleProduct(id)}
-              id="more"
-              className="col-12 col-md-2 my-2 text-right d-none"
-            >
-              <Link to="/SingleProduct" className="text-dark">
-                <div className="first allPrducts">
-                  <img src={img} className="imgProd" alt="img" />
-                  <span className="spancatgory">50%-</span>
-                  <div className="icons text-right">
-                    <BsFillStarFill className="iconP text-muted" />
-                    <BsFillStarFill className="iconP" />
-                    <BsFillStarFill className="iconP" />
-                    <BsFillStarFill className="iconP" />
-                    <BsFillStarFill className="iconP" />
-                  </div>
-                  <h6 className="nameP">{name}</h6>
-                  <h6 className="priceP">
-                    ${price} <span className="text-muted">$133 </span>
-                  </h6>
-                </div>
-              </Link>
-            </div>
-          );
-        })}
-        <div className="col-12">
-          <button className="font-main btn_more" onClick={ShowMore}>
-            <AiOutlineRedo className="ml-2" /> عرض المزيد
-          </button>
-        </div>
-
-
-        <div className="col-12 text-right py-5">
-          <h3 className="font-main font-weight-bold text-muted">شاهدت مؤخرا</h3>
-        </div>
-        {AllProducts.map(({ id, name, img, price }) => {
-          return (
-            <div
-              key={id}
-              onClick={() => setSingleProduct(id)}
-              className="col-12 col-md-2 my-2 text-right"
-            >
-              <Link to="/SingleProduct" className="text-dark">
+            <div key={id} className="col-12 col-md-2 my-2 text-right mx-0">
+              <Link to="/SingleProduct" className="text-dark" onClick={() => setTest(id)} to={`/category/${name}`}>
                 <div className="first">
-                  <img src={img} className="imgProd" alt="img" />
+                  <img src={image} className="imgProd" alt="img" />
                   <div className="icons text-right">
                     <BsFillStarFill className="iconP text-muted" />
                     <BsFillStarFill className="iconP" />
@@ -143,9 +53,6 @@ function Category() {
                     <BsFillStarFill className="iconP" />
                   </div>
                   <h6 className="nameP">{name}</h6>
-                  <h6 className="priceP">
-                    ${price} <span className="text-muted">$133 </span>
-                  </h6>
                 </div>
               </Link>
             </div>

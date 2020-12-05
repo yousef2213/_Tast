@@ -14,39 +14,41 @@ function Home() {
           <Carousel />
         </div>
       </div>
-      <Sec2 />
+
+      <Sec2 />  
       <Sec3 />
       <LastHome />
       <Hero />
       <div className="row mx-0 px-0 py-5">
-        <div className="container-fluid mx-0 px-0">
+        <div className="container-fluid mx-0">
           <div className="row mx-0 pb-3">
             <div className="col-12 text-right myproduct mx-0">
               <h4 className="font-main">منتجات مميزة</h4>
               <ul className="nav nav-tabs d-block d-md-flex" id="myTab" role="tablist">
+                
                 <li className="nav-item" role="presentation">
-                  <a className="nav-link li active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" >
-                  ساعات
+                  <a className="nav-link li active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                    ساعات
                   </a>
                 </li>
                 <li className="nav-item" role="presentation">
                   <a className="nav-link li" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-                     احذية للرجال
+                    احذية للرجال
                   </a>
                 </li>
                 <li className="nav-item" role="presentation">
                   <a className="nav-link li" id="profile1-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile" aria-selected="false">
-                     احذية للنساء
+                    احذية للنساء
                   </a>
                 </li>
                 <li className="nav-item" role="presentation">
                   <a className="nav-link li" id="profile2-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">
-                     ساعات
+                    ساعات
                   </a>
                 </li>
                 <li className="nav-item" role="presentation">
                   <a className="nav-link li" id="profile3-tab" data-toggle="tab" href="#profile3" role="tab" aria-controls="profile" aria-selected="false">
-                     هواتف
+                    هواتف
                   </a>
                 </li>
               </ul>

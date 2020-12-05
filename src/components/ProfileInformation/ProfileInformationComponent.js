@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Info1 from "./Info1";
 import Info2 from "./Info2";
 import Info3 from "./Info3";
@@ -6,7 +6,9 @@ import { FaUserAlt, FaShoppingBag } from "react-icons/fa"
 import { HiLocationMarker } from "react-icons/hi"
 import { BsFolderSymlinkFill } from "react-icons/bs"
 import { Link } from "react-router-dom";
+import { QafeerContext } from "../../context/context";
 function ProfileInformationComponent() {
+  const { LoginOut } = useContext(QafeerContext)
   return (
   <div className="row mx-0 my-5">
     <div className="col-12 col-md-3">
@@ -35,7 +37,7 @@ function ProfileInformationComponent() {
           </div>
           <h6 className="h6sidebar"> طلباتي</h6>
         </a>
-        <Link className="nav-link nav-link-one"  data-toggle="pill" to="/" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+        <Link className="nav-link nav-link-one" onClick={LoginOut}  data-toggle="pill" to="/" role="tab" aria-controls="v-pills-settings" aria-selected="false">
           <div className="lastSectionSideBar text-center">
             <div className="divimgSidebar">
                 <BsFolderSymlinkFill className="imgSidebar" />

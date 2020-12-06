@@ -51,7 +51,7 @@ function Footer() {
               </Link>
             </li>
             <li className="pb-2">
-              <Link className="afooter" to="/">
+              <Link className="afooter" to="/WishList">
                 المفضلة
               </Link>
             </li>
@@ -73,7 +73,7 @@ function Footer() {
               </Link>
             </li>
             <li className="pb-2">
-              <Link className="afooter" to="/Signin">
+              <Link className="afooter" to="/">
                 تسجيل الدخول
               </Link>
             </li>

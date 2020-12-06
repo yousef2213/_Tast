@@ -1,13 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import { BsFillStarFill } from "react-icons/bs";
-import { AiOutlineRedo } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { QafeerContext } from "../context/context";
 import loading from "../images/loading.svg"
 function Category() {
-  const { setTest } = useContext(
-    QafeerContext
-  );
+  const { setTest } = useContext(QafeerContext);
   const [Catergory, setCatergory] = useState([]);
   useEffect(() => {
     getCatergory();

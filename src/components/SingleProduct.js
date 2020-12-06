@@ -1,6 +1,4 @@
 import React, { useContext } from "react";
-import Product from "../images/1.png";
-import Product2 from "../images/test.png";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsFillStarFill } from "react-icons/bs";
 import Visa from "../images/pay/visa.png";

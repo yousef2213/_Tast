@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="container-fluid mx-0 px-0">
       <div className="row mx-0 mb-3 mt-3">
-        <div className="col-12 col-md-11 mx-auto carousel_home">
+        <div className="col-12 mx-0 carousel_home px-0">
           <Carousel />
         </div>
       </div>

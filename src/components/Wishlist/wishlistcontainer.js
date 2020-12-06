@@ -5,7 +5,7 @@ import { QafeerContext } from "../../context/context";
 import loading from "../../images/loading.svg";
 
 function Wishlistcontainer() {
-  const { WishList = [], setSingleProduct, User } = useContext(QafeerContext);
+  const { WishList = [], setSingleProduct } = useContext(QafeerContext);
   if (WishList.length === 0) {
     return (
       <div className="container mx-auto px-0 my-3">
@@ -38,7 +38,6 @@ function Wishlistcontainer() {
       </div>
     );
   }
-  console.log(WishList.wishlist_data);
   return (
     <div className="container">
       <div className="row mx-0 py-5">

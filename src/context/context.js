@@ -12,6 +12,7 @@ class QafeerProvider extends Component {
     SingleProduct: {},
     User: {},
     Cart: [],
+    Cart_Fake: [],
     WishList: [],
     Category: [],
     CategoryListId: [],
@@ -39,9 +40,7 @@ class QafeerProvider extends Component {
     localStorage.setItem("Login", JSON.stringify(this.state.Login));
   };
   getDataProducts = () => {
-    axios
-      .get(base_url + "/wp-json/bestgator/v1/getAllCats?page_num=1&per_page=50")
-      .then((res) => {
+    axios.get(base_url + "/wp-json/bestgator/v1/getAllCats?page_num=1&per_page=50").then((res) => {
         this.setState({
           AllProducts: res.data.cats_list,
         });
@@ -85,10 +84,7 @@ class QafeerProvider extends Component {
       headers: myHeaders,
       redirect: "follow",
     };
-    let result = await fetch(
-      `https://qafeer.net/wp-json/bestgator/v1/getSingleProduct?product_id=${id}`,
-      requestOptions
-    );
+    let result = await fetch(`https://qafeer.net/wp-json/bestgator/v1/getSingleProduct?product_id=${id}`,requestOptions);
     let data = await result.json();
     this.setState({
       SingleProduct: { ...data.prodcut_data },
@@ -97,17 +93,18 @@ class QafeerProvider extends Component {
   //add To Cart
   addToCart = async (id) => {
     alert("Waiting");
-    // let tempCart = [...this.state.Cart];
+    // let tempCart = [...this.state.Cart_Fake];
     // let tempProducts = [...this.state.AllProducts];
     // let tempItem = tempCart.find((item) => item.id === id);
-    let tempItem = this.state.SingleProduct;
     // if (!tempItem) {
     // tempItem = tempProducts.find((item) => item.id === id);
-    console.log(tempItem);
+    // console.log(tempItem);
+    // console.log(tempProducts);
     // let total = tempItem.price;
     // let cartItem = { ...tempItem, count: 1, total };
     // tempCart = [...tempCart, cartItem];
-    // } else {
+    // } 
+    // else {
     // tempItem.count++;
     // tempItem.total = tempItem.price * tempItem.count;
     // tempItem.total = parseFloat(tempItem.total.toFixed(2));
@@ -545,18 +542,37 @@ class QafeerProvider extends Component {
   };
   // WishList
   addToWishlist = async (id) => {
-    // let CureentUserJwt = this.state.User.jwt;
-    // let URL_DB = `https://qafeer.net/wp-json/bestgator/v1/addToWishlist?jwt=${CureentUserJwt}&product_id=${id}`;
-    // let myHeaders = new Headers();
-    // let requestOptions = {
-    //   method: "POST",
-    //   headers: myHeaders,
-    //   redirect: "follow",
-    // };
-    // let result = await fetch(URL_DB, requestOptions);
-    // let data = await result.json();
-    alert("Waiting");
+    let CureentUserJwt = this.state.User.jwt;
+    let URL_DB = `https://qafeer.net/wp-json/bestgator/v1/addToWishlist`;
+    let myHeaders = new Headers();
+    var formdata = new FormData();
+    formdata.append("product_id", id);
+    formdata.append("jwt", CureentUserJwt);
+    let requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: formdata,
+      redirect: "follow",
+    };
+    let result = await fetch(URL_DB, requestOptions);
+    let data = await result.json();
   };
+    // WishList
+    removeToWishlist = async (id) => {
+      let CureentUserJwt = this.state.User.jwt;
+      let URL_DB = `https://qafeer.net/wp-json/bestgator/v1/removeWishlistProduct?wishlist_item_id=${id}&jwt=${CureentUserJwt}`;
+      let myHeaders = new Headers();
+      var formdata = new FormData();
+      formdata.append("wishlist_item_id", id);
+      formdata.append("jwt", CureentUserJwt);
+      let requestOptions = {
+        method: "GET",
+        headers: myHeaders,
+        redirect: "follow",
+      };
+      let result = await fetch(URL_DB, requestOptions);
+      let data = await result.json();
+    };
 
   render() {
     return (
@@ -578,6 +594,7 @@ class QafeerProvider extends Component {
           setTest: this.setTest,
           setCategoryById: this.setCategoryById,
           addToWishlist: this.addToWishlist,
+          removeToWishlist: this.removeToWishlist
         }}
       >
         {this.props.children}

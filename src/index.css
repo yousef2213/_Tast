@@ -337,7 +337,8 @@ td {
 
 /* Nav */
 .fir {
-  box-shadow: 0px 0px 10px #ccc !important;
+  /* box-shadow: 0px 0px 10px #ccc !important; */
+  box-shadow: 0 4px 2px -2px #ccc;
 }
 
 .logo_nav {
@@ -369,7 +370,7 @@ td {
   position: relative;
   padding: 10px;
   border: 0;
-  border: 1px solid #f6f6f6;
+  border: 1px solid #ccc;
   border-radius: 40px;
   width: 100%;
   font-family: "Tajawal", sans-serif;
@@ -381,7 +382,6 @@ td {
 
 .card_nav {
   color: #000 !important;
-  font-size: 2rem;
 }
 
 .input_Search::placeholder {
@@ -394,12 +394,12 @@ td {
 
 .icon_Search {
   position: absolute;
-  top: 5%;
-  font-size: 2.6rem;
-  padding: 9px;
+  top: 2%;
+  font-size: 2.8rem;
+  padding: 11px;
   background-color: #cf9833;
   color: #fff;
-  left: 1%;
+  left: 0;
   width: 10%;
   border-top-left-radius: 49px;
   border-bottom-left-radius: 49px;
@@ -444,9 +444,8 @@ td {
 
 .span33 {
   position: absolute;
-  top: 18px;
+  top: 4px;
   right: 53%;
-  ;
   background: #cf9833;
   padding: 3px 5px;
   border-radius: 50%;
@@ -456,8 +455,8 @@ td {
 
 .spancart {
   position: absolute;
-  top: 9px;
-  right: 39px;
+  top: -2px;
+  right: 37px;
   background: #cf9833;
   padding: 3px 5px;
   border-radius: 50%;
@@ -1038,8 +1037,7 @@ td {
 
 .listicon {
   font-size: 1.8rem;
-  margin-left: auto !important;
-  margin-right: 1rem !important;
+  margin-left: 10px;
 }
 
 .nav_link_color {
@@ -1047,7 +1045,21 @@ td {
   font-weight: 500 !important;
   font-family: "Tajawal", sans-serif !important;
 }
-
+.navlink_dropdown{
+  list-style: none;
+}
+.navlink_dropdown_a{
+  color: #fff !important;
+}
+.navlink_dropdown_a::after{
+  display: none !important;
+}
+.navDorp{
+  color: #000 !important;
+}
+.navDorp::after{
+  margin-right: 7px;
+}
 @media (max-width: 990px) {
   .awl {
     text-align: right;
@@ -1070,6 +1082,15 @@ td {
   border-color: #dee2e6 #dee2e6 #fff;
 }
 
+.nav-tabs2 .nav-link.active {
+  background-color: transparent !important;
+  color: #fff !important;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+.nav-tabs2 .nav-link {
+  width: 80px !important;
+  align-self: center !important;
+}
 .li {
   color: #000 !important;
 }
@@ -1348,7 +1369,6 @@ td {
   border: 0;
   border-radius: 30px;
   color: #fff;
-  font-family: "Courier New", Courier, monospace;
   font-weight: 600;
 }
 
@@ -1373,8 +1393,9 @@ td {
 
 .wishlist_item_star {
   position: absolute;
-  top: 8px;
-  right: 6%;
+  top: 1.5rem;
+  right: 12%;
+  cursor: pointer;
   color: #cf9833;
 }
 

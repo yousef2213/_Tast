@@ -8,19 +8,13 @@ import Maestro from "../images/pay/maestro.png";
 import CardBanek from "../images/pay/cardBank.png";
 import Discove from "../images/pay/discover.png";
 import { QafeerContext } from "../context/context";
-function SingleProduct() {
-  const { addToCart, SingleProduct = {} ,addToWishlist} = useContext(QafeerContext);
+function SingleProduct({product,Id}) {
+  const { addToCart, addToWishlist} = useContext(QafeerContext);
   const ChangeSrc = (e) => {
     let DefaultSrc = document.querySelector(".DefaultSrc");
     DefaultSrc.src = e.target.src;
   };
-  const {
-    images = [],
-    name,
-    regular_price,
-    sale_price,
-    id
-  } = SingleProduct;
+  const { images = [], name, regular_price, sale_price, id } = product;
   return (
     <div className="container mx-auto px-0 my-3">
       <div className="row mx-0">
@@ -79,7 +73,7 @@ function SingleProduct() {
             <div className="btnIn px-2">
               <button
                 className="d-block w-100 btnadd mb-0 py-2 px-2"
-                onClick={() => addToCart(SingleProduct.id)}
+                onClick={() => addToCart(product.id)}
               >
                 اضافة لمشتريات النقير
               </button>

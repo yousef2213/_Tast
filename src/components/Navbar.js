@@ -84,52 +84,44 @@ function Navbar() {
         <div className="row mx-0">
           <div className="col-12 col-md-11 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light Nav">
-              <h5
-                className="navbar-brand font-main Sections mr-0 my-0 py-2 C_p awl"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <BsList className="listicon text-white" />
+              <h5 className="navbar-brand font-main Sections mr-0 my-0 py-0 C_p awl d-flex" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <BsList className="listicon text-white d-block d-md-none" />
+                <li className="nav-item navlink_dropdown dropdown d-none d-md-block">
+                    <a className="nav-link navlink_dropdown_a dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <BsList className="listicon text-white" />
+                      الاقسام
+                    </a>
+                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                      {Catergory.map(({ id, name }) => {
+                        return (
+                          <React.Fragment key={id}>
+                            <Link className="dropdown-item" onClick={() => setTest(id)} to={`/category/${name}`}>
+                              {name}
+                            </Link>
+                          </React.Fragment>
+                        );
+                      })}
+                    </div>
+                  </li>
               </h5>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mx-auto">
                   <div className="input_navbar w-100 mr-0 d-md-none my-2">
-                    <input
-                      type="text"
-                      placeholder="ابحث هنا"
-                      className="input_Search_navbar"
-                    />
+                    <input type="text" placeholder="ابحث هنا" className="input_Search_navbar" />
                     <AiOutlineSearch className="icon_Search_small" />
                   </div>
                   <li className="nav-item">
-                    <Link
-                      className="nav-link nav_link_color text-center"
-                      to="/"
-                    >
+                    <Link className="nav-link nav_link_color text-center" to="/">
                       الرئيسية
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      className="nav-link nav_link_color text-center"
-                      to="/التجار"
-                    >
+                    <Link className="nav-link nav_link_color text-center" to="/التجار">
                       التجار
                     </Link>
                   </li>
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
+                  <li className="nav-item dropdown d-block d-md-none">
+                    <a className="nav-link navDorp dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       الاقسام
                     </a>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -145,26 +137,17 @@ function Navbar() {
                     </div>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      className="nav-link nav_link_color text-center"
-                      to="/category"
-                    >
+                    <Link className="nav-link nav_link_color text-center" to="/category">
                       المعارض
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      className="nav-link nav_link_color text-center"
-                      to="/category"
-                    >
+                    <Link className="nav-link nav_link_color text-center" to="/category">
                       الصفحات العاجلة
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      className="nav-link nav_link_color text-center"
-                      to="/ProfileInformation"
-                    >
+                    <Link className="nav-link nav_link_color text-center" to="/">
                       تواصل معنا
                     </Link>
                   </li>

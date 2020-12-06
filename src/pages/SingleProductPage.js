@@ -4,9 +4,27 @@ import Products from "../components/Products.js";
 import { QafeerContext } from "../context/context";
 import SingleProduct from "../components/SingleProduct";
 import loading from "../images/loading.svg";
-function SingleProductPage() {
+import { useEffect } from "react";
+import { useState } from "react";
+function SingleProductPage(props) {
+  const [Single, SetSingle] = useState([])
   const { SingleProduct: SignNicName } = useContext(QafeerContext);
-  if (!SignNicName.id) {
+  useEffect(() => {
+    getSingleProduct(props.match.params.id)
+  }, [])
+  const getSingleProduct = async (id) => {
+    let Id_product = id;
+    let myHeaders = new Headers();
+    let requestOptions = {
+      method: "Get",
+      headers: myHeaders,
+      redirect: "follow",
+    };
+    let result = await fetch(`https://qafeer.net/wp-json/bestgator/v1/getSingleProduct?product_id=${Id_product}`,requestOptions);
+    let data = await result.json();
+    SetSingle(data)
+  };
+  if (Single.length === 0) {
     return (
       <div className="container mx-auto px-0 my-3">
         <div className="row mx-0 py-5">
@@ -22,7 +40,7 @@ function SingleProductPage() {
   }
   return (
     <div>
-      <SingleProduct />
+      <SingleProduct product={Single.prodcut_data} Id={props.match.params.id} />
       <Nav />
       <div className="mb-5">
         <div className="container">

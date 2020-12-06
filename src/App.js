@@ -25,8 +25,8 @@ export default function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/ProfileInformation" component={ProfileInformation} />
-          <Route path="/حسابي" component={Profile} />
+          {/* <Route path="/" component={ProfileInformation} /> */}
+          <Route path="/حسابي" component={ProfileInformation} />
           <Route path="/الاشتراك" component={Conditions} />
           <Route path="/SingleProduct" component={SingleProductPage} />
           <Route path="/Cart" component={Cart} />
@@ -36,6 +36,7 @@ export default function App() {
           <Route exact path="/category" component={Category} />
           <Route path="/category/:name" component={CategoryById} />
           <Route path="/categoryId/:id" component={Dynmic} />
+          <Route path="/product/:id" component={SingleProductPage} />
         </Switch>
         <Footer />
       </div>

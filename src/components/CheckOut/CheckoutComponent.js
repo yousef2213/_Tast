@@ -129,62 +129,65 @@ function CheckoutComponent() {
               <h4 className="text-right font-main font-weight-bold pb-4">
                 الدفع
               </h4>
+              <nav>
+                <div className="nav nav-tabs nav-tabs2" id="nav-tab" role="tablist">
+                  <a className="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                    <img src={Visa} className="visa mx-auto" alt="Visa" />
+                  </a>
+                  <a className="nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">
+                  <img src={Paypal} className="visa mx-auto" alt="Visa" />
+                  </a>
+                  <a className="nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">
+                    <img src={MestarCard} className="visa mx-auto" alt="Visa" />
+                  </a>
+                  <a className="nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">
+                    <img src={Maestro} className="visa mx-auto" alt="Visa" />
+                  </a>
+                  <a className="nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">
+                    <img src={Discove} className="visa mx-auto" alt="Visa" />
+                  </a>
+                  <a className="nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">
+                    <img src={CardBanek} className="visa mx-auto" alt="Visa" />
+                  </a>
+                </div>
+                </nav>
+                <div className="tab-content" id="nav-tabContent">
+                <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div className="p-3">
+                      <div className="my-3">
+                        <label className="label">رقم البطاقة</label>
+                        <input type="text" className="input_order" placeholder="4144 **** **** ****" id="numberCard" />
+                      </div>
+                      <div className="my-3 dflex_small">
+                        <div>
+                          <label className="label">رمز الامان</label>
+                          <input type="number" className="input_order" placeholder="***" id="SecCard" />
+                        </div>
+                        <div>
+                          <label className="label">تاريخ الانتهاء </label>
+                          <input type="number" className="input_order" placeholder="00/00" id="DataEndCard"/>
+                        </div>
+                      </div>
+                      <div className="my-3">
+                        <label className="label">اسم صاحب البطاقة</label>
+                        <input type="text" className="input_order" id="nameUserCard" />
+                      </div>
+                      <div className="my-3">
+                        <input type="submit" className="input_order_btn font-main" value="اتمام الدفع" onClick={getCheckout} />
+                      </div>
+                    </div>
+                </div>
+              </div>
+
               <div className="_pay">
                 <div>
                   <h5 className="text-right font-main font-weight-bold pb-1">
                     اختر طريقة الدفع
                   </h5>
                   <div className="text-right">
-                    <img src={Visa} className="visa" alt="Visa" />
-                    <img src={MestarCard} className="visa" alt="Visa" />
-                    <img src={Paypal} className="visa" alt="Visa" />
-                    <img src={Maestro} className="visa" alt="Visa" />
-                    <img src={Discove} className="visa" alt="Visa" />
-                    <img src={CardBanek} className="visa" alt="Visa" />
-                  </div>
-
-                  <div className="p-3">
-                    <div className="my-3">
-                      <label className="label">رقم البطاقة</label>
-                      <input
-                        type="text"
-                        className="input_order"
-                        placeholder="7911**** **** **** ****"
-                        id="numberCard"
-                      />
-                    </div>
-                    <div className="my-3 dflex_small">
-                      <div>
-                        <label className="label">رمز الامان</label>
-                        <input
-                          type="number"
-                          className="input_order"
-                          placeholder="***"
-                          id="SecCard"
-                        />
-                      </div>
-                      <div>
-                        <label className="label">تاريخ الانتهاء </label>
-                        <input
-                          type="number"
-                          className="input_order"
-                          placeholder="00/00"
-                          id="DataEndCard"
-                        />
-                      </div>
-                    </div>
-                    <div className="my-3">
-                      <label className="label">اسم صاحب البطاقة</label>
-                      <input type="text" className="input_order" id="nameUserCard" />
-                    </div>
-                    <div className="my-3">
-                      <input
-                        type="submit"
-                        className="input_order_btn font-main"
-                        value="اتمام الدفع"
-                        onClick={getCheckout}
-                      />
-                    </div>
+                   
+                    
+                  
                   </div>
                 </div>
               </div>

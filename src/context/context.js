@@ -48,8 +48,8 @@ class QafeerProvider extends Component {
     Category: [],
     CategoryListId: [],
     wishlist_data_items: 0,
-    CartItem: 0,
-    Total: 0,
+    CartItems: 0,
+    Total: 0.00,
     mess: "",
     messSubscription: "",
     messSaveEdit: "",
@@ -84,14 +84,14 @@ class QafeerProvider extends Component {
   addTotals = () => {
     let CartItems = 0;
     let subtotal = 0;
-    this.state.WishList.forEach((item) => {
-      CartItems += item.count;
-      subtotal += item.total;
+    this.state.Cart.forEach((item) => {
+      CartItems += item.price;
+      subtotal += +item.price;
     });
-    
+    console.log(subtotal);
     subtotal = parseFloat(subtotal.toFixed(2));
     this.setState({
-      CartItem: CartItems,
+      CartItems: this.state.Cart.length,
       Total: subtotal,
     });
   };
@@ -577,9 +577,12 @@ class QafeerProvider extends Component {
     }, 
     () => {
       console.log("Done Api");
-      // this.setState({
-      //   wishlist_data_items: this.state.WishList.wishlist_data.length
-      // })
+      this.addTotals()
+      if(this.state.Login){
+        this.setState({
+        wishlist_data_items: this.state.WishList.length
+      })
+      }
     });
   };
   // WishList

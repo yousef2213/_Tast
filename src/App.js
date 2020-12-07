@@ -18,6 +18,7 @@ import CategoryById from "./pages/CategoryById.js";
 import WishList from "./pages/WishList.js";
 
 import Form from "./components/Form"
+import ConnectUs from "./pages/ConnectUs.js";
 
 export default function App() {
   const { Login } = useContext(QafeerContext);
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/الاشتراك" component={Conditions} />
           <Route path="/SingleProduct" component={SingleProductPage} />
           <Route path="/Cart" component={Cart} />
+          <Route path="/connectus" component={ConnectUs} />
           <Route path="/Checkout" component={CheckOut} />
           <Route path="/التجار" component={Profile} />
           <Route path="/المعارض" component={TogarNumberOne} />

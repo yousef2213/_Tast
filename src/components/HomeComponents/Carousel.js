@@ -7,11 +7,7 @@ function Carousel() {
     <div className="ccar">
 
           {/* Start */}
-          <div
-            id="carouselExampleCaptions"
-            className="carousel slide banner position-relative"
-            data-ride="carousel"
-          >
+          <div id="carouselExampleCaptions" className="carousel slide banner position-relative" data-ride="carousel">
             <ol className="carousel-indicators">
               <li data-target="#carouselExampleCaptions"data-slide-to="0" className="active">
                 <span className="bottom_arr">1</span>
@@ -34,6 +30,14 @@ function Carousel() {
                  <img src={banner3} className="img-Coarousl" alt="banner" />
               </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
           {/* End */}
     </div>

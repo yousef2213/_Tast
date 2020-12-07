@@ -10,16 +10,10 @@ import { QafeerContext } from "../context/context";
 import React from "react";
 function Navbar() {
   const [Catergory, setCatergory] = useState([]);
-  const [Accessories, setAccessories] = useState([]);
-  const [Camera, setCamera] = useState([]);
-  const [Car, setCar] = useState([]);
-  const { CartItem, wishlist_data_items, Total, setTest, setCategoryById, Login} = useContext(QafeerContext);
+  const { CartItems, wishlist_data_items, Total, setTest, setCategoryById, Login} = useContext(QafeerContext);
   useEffect(() => {
       getCatergory();
-      // testing();
-      // CameraData();
-      // CarData()
-  }, []);
+  }, [Catergory]);
 
   async function getCatergory() {
     let URL_CATEGORY = "https://qafeer.net/wp-json/bestgator/v1/listMainCats?per_page=10&page_num=1";
@@ -27,25 +21,6 @@ function Navbar() {
     let data = await result.json();
     setCatergory(data.cats_list);
   }
-  // async function testing() {
-  //   let URL_CATEGORY = `https://qafeer.net/wp-json/bestgator/v1/listSubCats?per_page=10&page_num=1&cat_id=44`;
-  //   let result = await fetch(URL_CATEGORY);
-  //   let data = await result.json();
-  //   setAccessories(data.cats_list);
-  // }
-  // async function CameraData() {
-  //   let URL_CATEGORY = `https://qafeer.net/wp-json/bestgator/v1/listSubCats?per_page=10&page_num=1&cat_id=53`;
-  //   let result = await fetch(URL_CATEGORY);
-  //   let data = await result.json();
-  //   setCamera(data.cats_list);
-  // }
-  // async function CarData() {
-  //   let URL_CATEGORY = `https://qafeer.net/wp-json/bestgator/v1/listSubCats?per_page=10&page_num=1&cat_id=54`;
-  //   let result = await fetch(URL_CATEGORY);
-  //   let data = await result.json();
-  //   console.log(data.cats_list);
-  //   setCar(data.cats_list);
-  // }
   return (
     <>
       <div className="container mx-auto p-sm-0 p-md-2">
@@ -82,7 +57,7 @@ function Navbar() {
               <div className=" Cart_Div">
                 <Link to="/Cart" className="card_nav">
                   <img src={qafferr} className="icon_" alt="qafferr" />
-                  <span className="spancart"> {CartItem} </span>
+                  <span className="spancart"> {CartItems} </span>
                 </Link>
               </div>
               <div>
@@ -409,11 +384,7 @@ function Navbar() {
                       {Catergory.map(({ id, name }) => {
                         return (
                           <React.Fragment key={id}>
-                            <Link
-                              className="dropdown-item"
-                              onClick={() => setTest(id)}
-                              to={`/category/${name}`}
-                            >
+                            <Link className="dropdown-item" onClick={() => setTest(id)} to={`/category/${name}`}>
                               {name}
                             </Link>
                           </React.Fragment>
@@ -432,7 +403,7 @@ function Navbar() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link nav_link_color text-center" to="/">
+                    <Link className="nav-link nav_link_color text-center" to="/connectus">
                       تواصل معنا
                     </Link>
                   </li>

@@ -1,9 +1,5 @@
 import React, { useContext } from "react";
-import { BsFillStarFill } from "react-icons/bs";
-import { GoPlusSmall } from "react-icons/go";
 import { RiCloseLine } from "react-icons/ri";
-import { TiMinus } from "react-icons/ti";
-import { Link } from "react-router-dom";
 import { QafeerContext } from "../../context/context";
 import loading from "../../images/loading.svg";
 
@@ -90,42 +86,55 @@ function Wishlistcontainer() {
 export default Wishlistcontainer;
 
 function Testing({ dat = [] }) {
-  const { removeToWishlist,addToCart } = useContext(QafeerContext);
+  const { removeToWishlist, addToCart } = useContext(QafeerContext);
   return (
     <div className="conatiner">
       <div className="row mx-0">
         <div className="col">
-          {dat.map(
-            ({ id, price, image, images, name, wishlist_item_id }) => {
-              return (
-                <div key={id} className="row text-center align-items-center mx-0 bg_col py-2">
-                  <div className="col-10 mx-auto col-lg-2 my-0 my-lg-0">
-                    <div>
-                      <RiCloseLine className="cartitem remove text-danger" onClick={() => removeToWishlist(wishlist_item_id)} />
-                      <img src={image || images[0]} alt="product cart" className="img-fluid" width="150" style={{ border: "1px solid #ddd" }} />
-                    </div>
-                  </div>
-                  <div className="col-10 mx-auto col-lg-2 my-0 my-lg-0 text-right">
-                    <h6 className="text-center">{name}</h6>
-                  </div>
-                  <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0  font-main font-weight-bold">
-                    <span className="d-lg-none font-main font-weight-bold">
-                      السعر :
-                    </span>
-                    <span style={{ fontSize: "1.2rem" }}>$ {price || 22}</span>
-                  </div>
-
-                  <div className="col-10 mx-auto col-lg-2">
-                    <div className="btnIn px-2">
-                      <button className="d-block w-100 btnadd mb-0 py-2 px-2" onClick={() => addToCart(id)}>
-                        اضافة لمشتريات القفير
-                      </button>
-                    </div>
+          {dat.map(({ id, price, image, images, name, wishlist_item_id }) => {
+            return (
+              <div
+                key={id}
+                className="row text-center align-items-center mx-0 bg_col py-2"
+              >
+                <div className="col-10 mx-auto col-lg-2 my-0 my-lg-0">
+                  <div>
+                    <RiCloseLine
+                      className="cartitem remove text-danger"
+                      onClick={() => removeToWishlist(wishlist_item_id)}
+                    />
+                    <img
+                      src={image || images[0]}
+                      alt="product cart"
+                      className="img-fluid"
+                      width="150"
+                      style={{ border: "1px solid #ddd" }}
+                    />
                   </div>
                 </div>
-              );
-            }
-          )}
+                <div className="col-10 mx-auto col-lg-2 my-0 my-lg-0 text-right">
+                  <h6 className="text-center">{name}</h6>
+                </div>
+                <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0  font-main font-weight-bold">
+                  <span className="d-lg-none font-main font-weight-bold">
+                    السعر :
+                  </span>
+                  <span style={{ fontSize: "1.2rem" }}>$ {price || 22}</span>
+                </div>
+
+                <div className="col-10 mx-auto col-lg-2">
+                  <div className="btnIn px-2">
+                    <button
+                      className="d-block w-100 btnadd mb-0 py-2 px-2"
+                      onClick={() => addToCart(id)}
+                    >
+                      اضافة الي السلة{" "}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

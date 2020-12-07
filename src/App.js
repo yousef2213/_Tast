@@ -17,8 +17,8 @@ import Dynmic from "./pages/Dynmic.js";
 import CategoryById from "./pages/CategoryById.js";
 import WishList from "./pages/WishList.js";
 
-import Form from "./components/Form"
-import ConnectUs from "./pages/ConnectUs.js";
+// import Form from "./components/Form"
+import ContactUs from "./pages/ContactUs";
 
 export default function App() {
   const { Login } = useContext(QafeerContext);
@@ -33,7 +33,7 @@ export default function App() {
           <Route path="/الاشتراك" component={Conditions} />
           <Route path="/SingleProduct" component={SingleProductPage} />
           <Route path="/Cart" component={Cart} />
-          <Route path="/connectus" component={ConnectUs} />
+          <Route path="/contactus" component={ContactUs} />
           <Route path="/Checkout" component={CheckOut} />
           <Route path="/التجار" component={Profile} />
           <Route path="/المعارض" component={TogarNumberOne} />

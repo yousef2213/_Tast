@@ -39,7 +39,7 @@ function SingleProduct({product,Id}) {
           </div>
         </div>
 
-        <div className="col-12 col-md-6 align-self-center mx-0 mt-5 single1">
+        <div className="col-12 col-md-6 align-self-center mx-0 mt-5 single1 px-4">
           <div className="icons text-right">
             <span className="ml-2">تعليق</span>
             <BsFillStarFill className="icon" />
@@ -75,7 +75,7 @@ function SingleProduct({product,Id}) {
                 className="d-block w-100 btnadd mb-0 py-2 px-2"
                 onClick={() => addToCart(product.id)}
               >
-                اضافة لمشتريات القفير
+                اضافة الي السلة
               </button>
             </div>
             <div className="px-2 align-self-center">

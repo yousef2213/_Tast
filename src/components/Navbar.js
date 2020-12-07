@@ -403,7 +403,7 @@ function Navbar() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link nav_link_color text-center" to="/connectus">
+                    <Link className="nav-link nav_link_color text-center" to="/contactus">
                       تواصل معنا
                     </Link>
                   </li>

@@ -1060,6 +1060,15 @@ td {
 .navlink_dropdown_a_2::after{
   display: none !important;
 }
+
+.navlink_dropdown_dark{
+  color: #000 !important;
+}
+.navlink_dropdown_dark::after{
+  display: none !important;
+}
+
+
 .navDorp{
   color: #000 !important;
 }

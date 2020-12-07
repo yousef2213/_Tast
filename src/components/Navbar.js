@@ -375,8 +375,8 @@ function Navbar() {
                       التجار
                     </Link>
                   </li>
-                  <li className="nav-item navlink_dropdown text-dark dropdown d-block d-md-none">
-                    <Link className="nav-link navlink_dropdown_a dropdown-toggle text-dark" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <li className="nav-item navlink_dropdown dropdown d-block d-md-none">
+                    <Link className="nav-link dropdown-toggle navlink_dropdown_dark" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       الاقسام
                     </Link>
                   <div className="dropdown-menu" aria-labelledby="navbarDropdown">

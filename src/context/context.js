@@ -556,6 +556,8 @@ class QafeerProvider extends Component {
     let URL_CATEGORY = `https://qafeer.net/wp-json/bestgator/v1/listSubCats?per_page=10&page_num=1&cat_id=${id}`;
     let result = await fetch(URL_CATEGORY);
     let data = await result.json();
+    let Nv = document.getElementById("navbarNav");
+    Nv.classList.remove("show")
     this.setState({
       CategoryListId: data.cats_list,
     });

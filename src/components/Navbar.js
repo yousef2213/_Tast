@@ -21,6 +21,11 @@ function Navbar() {
     let data = await result.json();
     setCatergory(data.cats_list);
   }
+
+  const HideNav = () => {
+    let Nv = document.getElementById("navbarNav");
+    Nv.classList.remove("show")
+  }
   return (
     <>
       <div className="container mx-auto p-sm-0 p-md-2">
@@ -366,12 +371,12 @@ function Navbar() {
                     <AiOutlineSearch className="icon_Search_small" />
                   </div>
                   <li className="nav-item">
-                    <Link className="nav-link nav_link_color text-center" to="/" >
+                    <Link className="nav-link nav_link_color text-center" onClick={HideNav} to="/" >
                       الرئيسية
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link nav_link_color text-center" to="/التجار">
+                    <Link className="nav-link nav_link_color text-center" onClick={HideNav} to="/التجار">
                       التجار
                     </Link>
                   </li>
@@ -393,17 +398,17 @@ function Navbar() {
                   </div>
                 </li>
                   <li className="nav-item">
-                    <Link className="nav-link nav_link_color text-center" to="/المعارض">
+                    <Link className="nav-link nav_link_color text-center" onClick={HideNav} to="/المعارض">
                       المعارض
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link nav_link_color text-center" to="/category">
+                    <Link className="nav-link nav_link_color text-center" onClick={HideNav} to="/category">
                       الصفحات العاجلة
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link nav_link_color text-center" to="/contactus">
+                    <Link className="nav-link nav_link_color text-center" onClick={HideNav} to="/contactus">
                       تواصل معنا
                     </Link>
                   </li>

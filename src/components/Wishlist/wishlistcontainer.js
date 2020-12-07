@@ -106,7 +106,7 @@ function Testing({ dat = [] }) {
                     </div>
                   </div>
                   <div className="col-10 mx-auto col-lg-2 my-0 my-lg-0 text-right">
-                    <h6>{name}</h6>
+                    <h6 className="text-center">{name}</h6>
                   </div>
                   <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0  font-main font-weight-bold">
                     <span className="d-lg-none font-main font-weight-bold">

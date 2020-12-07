@@ -37,48 +37,48 @@ function Form() {
   });
 
   return (
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">
+    <div className="container">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a className="navbar-brand" href="#">
           Brand
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#main_nav"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="main_nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">
+        <div className="collapse navbar-collapse" id="main_nav">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item dropdown">
+              <a className="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">
                 Dropdown right
               </a>
-              <ul class="dropdown-menu dropdown-menu-right">
+              <ul className="dropdown-menu dropdown-menu-right">
                 <li>
-                  <a class="dropdown-item dropdown-toggle" href="#">
+                  <a className="dropdown-item dropdown-toggle" href="#">
                     Dropdown item 3
                   </a>
-                  <ul class="submenu submenu-left dropdown-menu">
+                  <ul className="submenu submenu-left dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a className="dropdown-item" href="">
                         Submenu item 1
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a className="dropdown-item" href="">
                         Submenu item 2
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a className="dropdown-item" href="">
                         Submenu item 3
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a className="dropdown-item" href="">
                         Submenu item 4
                       </a>
                     </li>
@@ -90,7 +90,7 @@ function Form() {
         </div>
       </nav>
 
-      <section class="section-content py-5">
+      <section className="section-content py-5">
         <h6>Demo view: Bootstrap multilevel dropdown menu </h6>
         <p>
           For this demo page you should connect to the internet to receive files
@@ -118,7 +118,7 @@ function Form() {
 
         <a
           href="http://bootstrap-menu.com/multilevel.html"
-          class="btn btn-warning"
+          className="btn btn-warning"
         >
           Back to tutorial or Download code
         </a>

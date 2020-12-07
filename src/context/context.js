@@ -11,11 +11,43 @@ class QafeerProvider extends Component {
     AllProducts: [],
     SingleProduct: {},
     User: {},
-    Cart: [],
-    Cart_Fake: [],
+    Cart: [ 
+      {
+      "id": 5525,
+      "name": "لاب توب HP مواصفات ممتازة",
+      "img": "https://qafeer.net/wp-content/uploads/2020/11/running-shoes-QJGJa6D-600.png",
+      "regular_price": "320",
+      "sale_price": "150",
+      "price": "150",
+      "rating_avg": 0,
+      "rating_count": 0,
+      "reviews": {
+          "reviews": []
+      },
+      "description": "نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه",
+      "short_description": "نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه"
+  },
+  {
+    "id": 55225,
+    "name": "لاب توب HP مواصفات ممتازة",
+    "img": "https://qafeer.net/wp-content/uploads/2020/11/running-shoes-QJGJa6D-600.png",
+    "regular_price": "320",
+    "sale_price": "150",
+    "price": "150",
+    "rating_avg": 0,
+    "rating_count": 0,
+    "reviews": {
+        "reviews": []
+    },
+    "description": "نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه",
+    "short_description": "نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه"
+}
+],
+    wishlist_item: [],
     WishList: [],
     Category: [],
     CategoryListId: [],
+    wishlist_data_items: 0,
     CartItem: 0,
     Total: 0,
     mess: "",
@@ -29,7 +61,9 @@ class QafeerProvider extends Component {
         User: this.getDateUser(),
         Login: this.getLogin(),
       }, () => {
-        this.getWishlist();
+        if(this.state.Login){
+          this.getWishlist();
+        }
       });
   }
   getDateUser = () => localStorage.getItem("User") ? JSON.parse(localStorage.getItem("User")) : [];
@@ -50,16 +84,18 @@ class QafeerProvider extends Component {
   addTotals = () => {
     let CartItems = 0;
     let subtotal = 0;
-    this.state.Cart.forEach((item) => {
+    this.state.WishList.forEach((item) => {
       CartItems += item.count;
       subtotal += item.total;
     });
+    
     subtotal = parseFloat(subtotal.toFixed(2));
     this.setState({
       CartItem: CartItems,
       Total: subtotal,
     });
   };
+
   setCategoryById = async (id) => {
     var myHeaders = new Headers();
     var requestOptions = {
@@ -537,11 +573,28 @@ class QafeerProvider extends Component {
     let result = await fetch(WishList_URL, requestOptions);
     let data = await result.json();
     this.setState({
-      WishList: data,
+      WishList: data.wishlist_data,
+    }, 
+    () => {
+      console.log("Done Api");
+      // this.setState({
+      //   wishlist_data_items: this.state.WishList.wishlist_data.length
+      // })
     });
   };
   // WishList
   addToWishlist = async (id) => {
+    let tempList = this.state.WishList;
+    let Id_product = id;
+    let myHeadersuser = new Headers();
+    let requestOptionsuser = {
+      method: "Get",
+      headers: myHeadersuser,
+      redirect: "follow",
+    };
+    let resultuser = await fetch(`https://qafeer.net/wp-json/bestgator/v1/getSingleProduct?product_id=${Id_product}`,requestOptionsuser);
+    let user = await resultuser.json();
+    tempList.push(user.prodcut_data);
     let CureentUserJwt = this.state.User.jwt;
     let URL_DB = `https://qafeer.net/wp-json/bestgator/v1/addToWishlist`;
     let myHeaders = new Headers();
@@ -556,23 +609,34 @@ class QafeerProvider extends Component {
     };
     let result = await fetch(URL_DB, requestOptions);
     let data = await result.json();
+    this.setState({
+      WishList: tempList
+    },() => {
+      document.querySelector(".heart").classList.add("addFav_")
+    })
   };
     // WishList
-    removeToWishlist = async (id) => {
-      let CureentUserJwt = this.state.User.jwt;
-      let URL_DB = `https://qafeer.net/wp-json/bestgator/v1/removeWishlistProduct?wishlist_item_id=${id}&jwt=${CureentUserJwt}`;
-      let myHeaders = new Headers();
-      var formdata = new FormData();
-      formdata.append("wishlist_item_id", id);
-      formdata.append("jwt", CureentUserJwt);
-      let requestOptions = {
-        method: "GET",
-        headers: myHeaders,
-        redirect: "follow",
-      };
-      let result = await fetch(URL_DB, requestOptions);
-      let data = await result.json();
+  removeToWishlist = async (id) => {
+    let CureentUserJwt = this.state.User.jwt;
+    let tempList = this.state.WishList;
+    tempList= [...tempList].filter(item => item.wishlist_item_id != id);
+    let URL_DB = `https://qafeer.net/wp-json/bestgator/v1/removeWishlistProduct?wishlist_item_id=${id}&jwt=${CureentUserJwt}`;
+    let myHeaders = new Headers();
+    var formdata = new FormData();
+    formdata.append("wishlist_item_id", id);
+    formdata.append("jwt", CureentUserJwt);
+    let requestOptions = {
+      method: "GET",
+      headers: myHeaders,
+      redirect: "follow",
     };
+    let result = await fetch(URL_DB, requestOptions);
+    let data = await result.json();
+    console.log('====================================');
+    this.setState({
+      WishList: tempList
+    })
+  };
 
   render() {
     return (

@@ -5,7 +5,7 @@ function Hero() {
     <div className="container-fluid px-0 mx-auto">
       <div className="row mx-0 px-0">
         <div className="her_test">
-          <img src={bane} className="img-fluid h-100" />
+          <img src={bane} className="img-fluid img_hero_2" />
         </div>
       </div>
     </div>

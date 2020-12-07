@@ -24,11 +24,7 @@ function CategoryById() {
       <div className="row mx-0 px-0 py-4">
         {CategoryListId.map(({ id, name, image }) => {
           return (
-            <div
-              key={id}
-              onClick={() => setCategoryById(id)}
-              className="col-12 col-md-2 my-2 text-right mx-0"
-            >
+            <div key={id} onClick={() => setCategoryById(id)} className="col-12 col-md-2 my-2 text-right mx-0">
               <Link to={`/categoryId/${id}`} className="text-dark">
                 <div className="first">
                   <img src={image} className="imgProd" alt="img" />

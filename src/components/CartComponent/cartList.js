@@ -15,7 +15,7 @@ const CartList = () => {
   }
   return (
     <div className="conatiner">
-      <div className="row  mx-0">
+      <div className="row mx-0">
         <div className="col">
           {Cart.map((item) => {
             return (

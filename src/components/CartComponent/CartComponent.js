@@ -6,10 +6,10 @@ import CartList from './cartList'
 export default function CartComponent() {
     
     return (
-        <>
+        <div className="">
         <CartColums />
         <CartList />
         <CartTotal />
-        </>
+        </div>
     )
 }

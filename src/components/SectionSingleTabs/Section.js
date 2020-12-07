@@ -52,8 +52,8 @@ function Section() {
               <AiOutlineHeart className="heart1 align-self-center" />
             </div>
             <div className="psamll_">
-              <button className="d-block w-100 btnadd mb-0 py-2 px-2">
-                اضافة لمشتريات النقير
+              <button className="d-block w-100 btnadd mb-0 py-2 px-3">
+                اضافة للمشتريات 
               </button>
             </div>
           </div>

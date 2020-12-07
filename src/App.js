@@ -17,6 +17,8 @@ import Dynmic from "./pages/Dynmic.js";
 import CategoryById from "./pages/CategoryById.js";
 import WishList from "./pages/WishList.js";
 
+import Form from "./components/Form"
+
 export default function App() {
   const { Login } = useContext(QafeerContext);
   if (Login) {
@@ -31,7 +33,8 @@ export default function App() {
           <Route path="/SingleProduct" component={SingleProductPage} />
           <Route path="/Cart" component={Cart} />
           <Route path="/Checkout" component={CheckOut} />
-          <Route path="/التجار" component={TogarNumberOne} />
+          <Route path="/التجار" component={Profile} />
+          <Route path="/المعارض" component={TogarNumberOne} />
           <Route path="/WishList" component={WishList} />
           <Route exact path="/category" component={Category} />
           <Route path="/category/:name" component={CategoryById} />

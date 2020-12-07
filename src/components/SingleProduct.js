@@ -75,12 +75,12 @@ function SingleProduct({product,Id}) {
                 className="d-block w-100 btnadd mb-0 py-2 px-2"
                 onClick={() => addToCart(product.id)}
               >
-                اضافة لمشتريات النقير
+                اضافة لمشتريات القفير
               </button>
             </div>
             <div className="px-2 align-self-center">
               <h4 className="h2p mb-0 align-self-center">
-                <span className="text-muted sale_price">${regular_price || 0}</span> ${sale_price}
+                <span className="text-muted sale_price">${regular_price || 0}</span> ${sale_price || `551`}
               </h4>
             </div>
           </div>

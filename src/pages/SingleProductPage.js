@@ -22,7 +22,7 @@ function SingleProductPage(props) {
     };
     let result = await fetch(`https://qafeer.net/wp-json/bestgator/v1/getSingleProduct?product_id=${Id_product}`,requestOptions);
     let data = await result.json();
-    SetSingle(data)
+    SetSingle(data.prodcut_data)
   };
   if (Single.length === 0) {
     return (
@@ -40,7 +40,7 @@ function SingleProductPage(props) {
   }
   return (
     <div>
-      <SingleProduct product={Single.prodcut_data} Id={props.match.params.id} />
+      <SingleProduct product={Single} Id={props.match.params.id} />
       <Nav />
       <div className="mb-5">
         <div className="container">

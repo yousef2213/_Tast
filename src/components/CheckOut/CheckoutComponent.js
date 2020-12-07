@@ -156,7 +156,7 @@ function CheckoutComponent() {
                   <div className="p-3">
                       <div className="my-3">
                         <label className="label">رقم البطاقة</label>
-                        <input type="text" className="input_order" placeholder="4144 **** **** ****" id="numberCard" />
+                        <input type="number" className="input_order" placeholder="4144 **** **** ****" id="numberCard" />
                       </div>
                       <div className="my-3 dflex_small">
                         <div>
@@ -176,19 +176,6 @@ function CheckoutComponent() {
                         <input type="submit" className="input_order_btn font-main" value="اتمام الدفع" onClick={getCheckout} />
                       </div>
                     </div>
-                </div>
-              </div>
-
-              <div className="_pay">
-                <div>
-                  <h5 className="text-right font-main font-weight-bold pb-1">
-                    اختر طريقة الدفع
-                  </h5>
-                  <div className="text-right">
-                   
-                    
-                  
-                  </div>
                 </div>
               </div>
             </div>

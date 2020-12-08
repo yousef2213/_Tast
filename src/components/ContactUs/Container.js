@@ -1,9 +1,7 @@
-import ConntactUs from "../../images/تواصل معنا/Component 54 – 1.png";
+// import ConntactUs from "../../images/تواصل معنا/Component 54 – 1.png";
 import ConntactUsTest from "../../images/تواصل معنا/email.png";
-import favebook from "../../images/تواصل معنا/facebook.svg";
-import instagram from "../../images/تواصل معنا/instagram.svg";
-import twitter from "../../images/تواصل معنا/twitter.svg";
-import youtube from "../../images/تواصل معنا/youtube.svg";
+import { FaFacebookF } from "react-icons/fa"
+import { AiOutlineTwitter, AiFillYoutube, AiFillInstagram } from "react-icons/ai"
 function Container() {
   return (
     <div className="container mx-auto">
@@ -55,16 +53,12 @@ function Container() {
         <div className="col-12 col-md-6">
           <div className="div_contact_relative">
             <img src={ConntactUsTest} className="img-fluid" alt="ConntactUs" />
-            {/* <div className="div_contact_abslute">
-              <h6 className="abs_1 py-2">technical@support.com</h6>
-              <h6 className="abs_1 py-2">123456789</h6>
-            </div> */}
-            <div className="text-center d-flex justify-content-between w-75 mx-auto">
-              <img src={favebook} className="img-fluid" alt="ConntactUs" />
-              <img src={instagram} className="img-fluid" alt="ConntactUs" />
-              <img src={twitter} className="img-fluid" alt="ConntactUs" />
-              <img src={youtube} className="img-fluid" alt="ConntactUs" />
-            </div>
+          </div>
+          <div className="icons_contactus">
+            <FaFacebookF className="Svg_icon_contactus" />
+            <AiOutlineTwitter className="Svg_icon_contactus" />
+            <AiFillInstagram className="Svg_icon_contactus" />
+            <AiFillYoutube className="Svg_icon_contactus" />
           </div>
         </div>
       </div>

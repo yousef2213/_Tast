@@ -26,22 +26,22 @@ class QafeerProvider extends Component {
       },
       "description": "نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه",
       "short_description": "نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه"
-  },
-  {
-    "id": 55225,
-    "name": "لاب توب HP مواصفات ممتازة",
-    "img": "https://qafeer.net/wp-content/uploads/2020/11/running-shoes-QJGJa6D-600.png",
-    "regular_price": "320",
-    "sale_price": "150",
-    "price": "150",
-    "rating_avg": 0,
-    "rating_count": 0,
-    "reviews": {
-        "reviews": []
-    },
-    "description": "نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه",
-    "short_description": "نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه"
-}
+      },
+      {
+        "id": 55225,
+        "name": "لاب توب HP مواصفات ممتازة",
+        "img": "https://images.pexels.com/photos/4219862/pexels-photo-4219862.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+        "regular_price": "320",
+        "sale_price": "150",
+        "price": "150",
+        "rating_avg": 0,
+        "rating_count": 0,
+        "reviews": {
+            "reviews": []
+        },
+        "description": "نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه",
+        "short_description": "نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه نص من خيال المصمم تم استخراجه من مولد النص العربى لاستخدامه فى هذه المساحه ويمكن استبداله بالنص المطلوب وتم استخدامه لاظهار تناسق التصميم وابارزه"
+      }
 ],
     wishlist_item: [],
     WishList: [],
@@ -82,13 +82,10 @@ class QafeerProvider extends Component {
   };
   //addTotals
   addTotals = () => {
-    let CartItems = 0;
     let subtotal = 0;
     this.state.Cart.forEach((item) => {
-      CartItems += item.price;
       subtotal += +item.price;
     });
-    console.log(subtotal);
     subtotal = parseFloat(subtotal.toFixed(2));
     this.setState({
       CartItems: this.state.Cart.length,
@@ -103,10 +100,7 @@ class QafeerProvider extends Component {
       headers: myHeaders,
       redirect: "follow",
     };
-    let result = await fetch(
-      `https://qafeer.net/wp-json/bestgator/v1/listProducts?per_page=10&page_num=1&cat_id=${id}`,
-      requestOptions
-    );
+    let result = await fetch(`https://qafeer.net/wp-json/bestgator/v1/listProducts?per_page=10&page_num=1&cat_id=${id}`,requestOptions);
     let data = await result.json();
     this.setState({
       CategoryListId: data.product_list,
@@ -212,8 +206,7 @@ class QafeerProvider extends Component {
     // }
   };
   clearCart = () => {
-    this.setState(
-      () => {
+    this.setState(() => {
         return {
           Cart: [],
         };
@@ -226,7 +219,6 @@ class QafeerProvider extends Component {
   removeItem = (id) => {
     let tempCart = [...this.state.Cart];
     tempCart = tempCart.filter((item) => item.id !== id);
-    // URL => /wp-json/bestgator/v1/removeCartProduct
     this.setState(
       () => {
         return {
@@ -262,23 +254,19 @@ class QafeerProvider extends Component {
       body: formdata,
       redirect: "follow",
     };
-    let result = await fetch(
-      "https://qafeer.net/wp-json/bestgator/v1/userLogin",
-      requestOptions
-    );
+    let result = await fetch("https://qafeer.net/wp-json/bestgator/v1/userLogin",requestOptions);
     if (result.status === 404) {
       this.setState({
         mess: "Something error or user is not registered before",
       });
     } else if (result.status === 200) {
       let data = await result.json();
-      this.setState(
-        {
+      this.setState({
           User: data.user_data,
           Login: true,
-        },
-        () => {
+        }, () => {
           this.Synch();
+          window.location.reload();
         }
       );
     }
@@ -398,13 +386,12 @@ class QafeerProvider extends Component {
 
   LoginOut = () => {
     localStorage.removeItem("User");
-    this.setState(
-      {
+    this.setState({
         User: [],
         Login: false,
-      },
-      () => {
+      }, () => {
         this.Synch();
+        window.location.reload();
       }
     );
   };
@@ -624,7 +611,7 @@ class QafeerProvider extends Component {
   removeToWishlist = async (id) => {
     let CureentUserJwt = this.state.User.jwt;
     let tempList = this.state.WishList;
-    tempList= [...tempList].filter(item => item.wishlist_item_id != id);
+    tempList= [...tempList].filter(item => item.wishlist_item_id !== id);
     let URL_DB = `https://qafeer.net/wp-json/bestgator/v1/removeWishlistProduct?wishlist_item_id=${id}&jwt=${CureentUserJwt}`;
     let myHeaders = new Headers();
     var formdata = new FormData();

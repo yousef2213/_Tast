@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "../components/ContactUs/Container";
 
 function ConnectUs() {
-  return <Container/>
+  return <Container />;
 }
 
 export default ConnectUs;

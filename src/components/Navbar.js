@@ -13,7 +13,7 @@ function Navbar() {
   const { CartItems, wishlist_data_items, Total, setTest, setCategoryById, Login} = useContext(QafeerContext);
   useEffect(() => {
       getCatergory();
-  }, [Catergory]);
+  }, []);
 
   async function getCatergory() {
     let URL_CATEGORY = "https://qafeer.net/wp-json/bestgator/v1/listMainCats?per_page=10&page_num=1";

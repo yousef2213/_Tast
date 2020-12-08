@@ -1,12 +1,12 @@
-import React from 'react'
-import TogarNumberOneComponent from '../components/Task2/TogarNumberOneComponent'
+import React from "react";
+import TogarNumberOneComponent from "../components/Task2/TogarNumberOneComponent";
 
 function TogarNumberOne() {
-    return (
-        <div>
-            <TogarNumberOneComponent />
-        </div>
-    )
+  return (
+    <div>
+      <TogarNumberOneComponent />
+    </div>
+  );
 }
 
-export default TogarNumberOne
+export default TogarNumberOne;

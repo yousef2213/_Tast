@@ -1,17 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
 import Nav from "../components/SectionSingleTabs/Nav";
 import Products from "../components/Products.js";
-import { QafeerContext } from "../context/context";
 import SingleProduct from "../components/SingleProduct";
 import loading from "../images/loading.svg";
 import { useEffect } from "react";
 import { useState } from "react";
 function SingleProductPage(props) {
-  const [Single, SetSingle] = useState([])
-  const { SingleProduct: SignNicName } = useContext(QafeerContext);
+  const [Single, SetSingle] = useState([]);
   useEffect(() => {
-    getSingleProduct(props.match.params.id)
-  }, [])
+    getSingleProduct(props.match.params.id);
+  }, []);
   const getSingleProduct = async (id) => {
     let Id_product = id;
     let myHeaders = new Headers();
@@ -22,7 +20,7 @@ function SingleProductPage(props) {
     };
     let result = await fetch(`https://qafeer.net/wp-json/bestgator/v1/getSingleProduct?product_id=${Id_product}`,requestOptions);
     let data = await result.json();
-    SetSingle(data.prodcut_data)
+    SetSingle(data.prodcut_data);
   };
   if (Single.length === 0) {
     return (

@@ -5,8 +5,12 @@ import Sec3 from "../components/HomeComponents/Sec3.js";
 import Products from "../components/Products.js";
 import LastHome from "../components/HomeComponents/LastHome.js";
 import Hero from "../components/Hero";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container-fluid mx-0 px-0">
       <div className="row mx-0 mb-3 mt-3">
@@ -14,7 +18,6 @@ function Home() {
           <Carousel />
         </div>
       </div>
-
       <Sec2 />  
       <Sec3 />
       <LastHome />

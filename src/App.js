@@ -28,10 +28,8 @@ export default function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
-          {/* <Route path="/" component={ProfileInformation} /> */}
           <Route path="/حسابي" component={ProfileInformation} />
           <Route path="/الاشتراك" component={Conditions} />
-          <Route path="/SingleProduct" component={SingleProductPage} />
           <Route path="/Cart" component={Cart} />
           <Route path="/contactus" component={ContactUs} />
           <Route path="/Checkout" component={CheckOut} />

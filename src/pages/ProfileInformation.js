@@ -3,7 +3,7 @@ import ProfileInformationComponent from "../components/ProfileInformation/Profil
 function ProfileInformation() {
   return (
     <div className="container mx-auto">
-        <ProfileInformationComponent />
+      <ProfileInformationComponent />
     </div>
   );
 }

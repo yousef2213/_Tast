@@ -44,7 +44,21 @@ function SigninCol2() {
           <input type="password" className="input_order pr-5" id="passconfirmSubscription" />
           <img src={padlockIcon} className="icon_email" alt="emailIcon" />
         </div>
-        <h6 className="text-danger w-100 text-right font-main">{messSubscription}</h6>
+        <div className="form-check text-right mr-3 d-flex">
+          <div>
+            <input className="form-check-input form-check-inpu" type="radio" name="CheckDefault" id="normal_user" />
+            <label className="form-check-label" htmlFor="normal_user"  className="form-check-label mx-1 font-main font-weight-bold my-0 mr-4">
+            عميل
+            </label>
+          </div>
+          <div className="mr-5">
+            <input className="form-check-input form-check-inpu" type="radio" name="CheckDefault" value="" id="special_user" />
+            <label className="form-check-label" htmlFor="special_user"  className="form-check-label mx-1 font-main font-weight-bold my-0 mr-4">
+            تاجر
+            </label>
+          </div>
+        </div>
+        <h6 className="text-danger w-100 text-right font-main pt-3 pb-1">{messSubscription}</h6>
         <div className="text-right">
           <button className="input_order_btn my-0 font-main d-inline-block w-25 text-center ml-autopx-5" onClick={getSubscription}>
             اشتراك

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import CheckoutComponent from "../components/CheckOut/CheckoutComponent.js";
 function CheckOut() {
   return (

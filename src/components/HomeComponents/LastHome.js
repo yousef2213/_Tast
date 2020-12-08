@@ -6,8 +6,7 @@ import { BsFillStarFill } from "react-icons/bs";
 function LastHome() {
   const [last, setLast] = useState([]);
   useEffect(() => {
-    const Ev = DataProducts.filter((dat) => dat.id <= 3);
-    setLast(Ev);
+    setLast(DataProducts.filter((dat) => dat.id <= 3));
   }, []);
   return (
     <div className="container mx-auto my-5">

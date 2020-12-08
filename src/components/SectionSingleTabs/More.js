@@ -11,43 +11,43 @@ function More() {
                 <td className="text-right td tdc">الماركة</td>
               </tr>
               <tr>
-                <td className="text-right td" scope="row">
+                <td className="text-right td">
                   رياضي
                 </td>
                 <td className="text-right td tdc">الموديل</td>
               </tr>
               <tr>
-                <td className="text-right td" scope="row">
+                <td className="text-right td">
                   37
                 </td>
                 <td className="text-right td tdc">المقاس</td>
               </tr>
               <tr>
-                <td className="text-right td" scope="row">
+                <td className="text-right td">
                   رمادي في اسود
                 </td>
                 <td className="text-right td tdc">اللون</td>
               </tr>
               <tr>
-                <td className="text-right td" scope="row">
+                <td className="text-right td">
                   متنوع
                 </td>
                 <td className="text-right td tdc">الخامة الرئيسية</td>
               </tr>
               <tr>
-                <td className="text-right td" scope="row">
+                <td className="text-right td">
                   مصر
                 </td>
                 <td className="text-right td tdc">بلد الصنع</td>
               </tr>
               <tr>
-                <td className="text-right td" scope="row">
+                <td className="text-right td">
                   رجالي
                 </td>
                 <td className="text-right td tdc">النوع</td>
               </tr>
               <tr>
-                <td className="text-right td" scope="row">
+                <td className="text-right td">
                   مناسب لكل المناسبات
                 </td>
                 <td className="text-right td tdc">الفصول</td>

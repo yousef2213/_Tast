@@ -21,6 +21,12 @@ function SigninCol1() {
         <input type="password" name="password" className="input_order pr-5" id="valuepassword" />
         <img src={padlockIcon} className="icon_email" alt="emailIcon" />
       </div>
+      <div className="form-check d-block text-right mr-3">
+        <input className="form-check-input form-check-inpu" type="checkbox" value="" id="defaultCheck1" />
+        <label htmlFor="defaultCheck1"  className="form-check-label mx-1 font-main font-weight-bold my-0 mr-4">
+        تذكرني
+        </label>
+      </div>
       <h6 className="text-danger w-100 text-right font-main">{mess}</h6>
       <div className="text-right d-flex">
         <div>
@@ -31,15 +37,6 @@ function SigninCol1() {
           >
             دخول
           </button>
-        </div>
-        <div className="form-group form-check my-0 align-self-center mr-5">
-          <input type="radio" className="form-check-inpu" id="exampleCheck1" />
-          <label
-            className="form-check-label mx-1 font-main font-weight-bold my-0"
-            htmlFor="exampleCheck1"
-          >
-            تذكرني
-          </label>
         </div>
       </div>
       <h4 className="font-main text-right py-3">او بواسطة</h4>

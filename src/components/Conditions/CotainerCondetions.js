@@ -3,15 +3,17 @@ import { IoMdClose } from "react-icons/io";
 
 function CotainerCondetions() {
   return (
-    <div className="container-fluid mx-auto">
+    <div className="container-fluid mx-auto condition">
       <div className="row mx-0 py-5 my-5">
         <div className="col-11 mx-auto text-center pb-5">
-            <h1 className="font-main font-weight-bold">خطط الأسعار</h1>
-            <h5 className="font-main font-weight-bold">خطط الاسعار خطط الاسعار</h5>
+          <h1 className="font-main font-weight-bold">خطط الأسعار</h1>
+          <h5 className="font-main font-weight-bold">
+            خطط الاسعار خطط الاسعار
+          </h5>
         </div>
         <div className="col-12 col-md-3 mx-auto px-0 my-2">
           <div className="py-2 Vip">
-          <span className="leftPoation"></span>
+            <span className="leftPoation"></span>
             <h4 className="text-right pt-5 font-main font-weight-bold">
               في اي بي
             </h4>
@@ -54,7 +56,7 @@ function CotainerCondetions() {
         </div>
         <div className="col-12 col-md-3 mx-auto px-0 my-2">
           <div className="py-2 Vip">
-          <span className="leftPoation"></span>
+            <span className="leftPoation"></span>
             <h4 className="text-right pt-5 font-main font-weight-bold">
               الذهبية
             </h4>
@@ -97,7 +99,7 @@ function CotainerCondetions() {
         </div>
         <div className="col-12 col-md-3 mx-auto px-0 my-2">
           <div className="py-2 Vip">
-          <span className="leftPoation"></span>
+            <span className="leftPoation"></span>
             <h4 className="text-right pt-5 font-main font-weight-bold">
               البرونزية
             </h4>
@@ -137,7 +139,8 @@ function CotainerCondetions() {
               />
             </div>
           </div>
-        </div></div>
+        </div>
+      </div>
     </div>
   );
 }

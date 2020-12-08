@@ -1,12 +1,15 @@
-import React from 'react'
-import CartComponent from '../components/CartComponent/CartComponent'
+import React, { useEffect } from "react";
+import CartComponent from "../components/CartComponent/CartComponent";
 
 function Cart() {
-    return (
-        <div>
-            <CartComponent/>
-        </div>
-    )
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <div>
+      <CartComponent />
+    </div>
+  );
 }
 
-export default Cart
+export default Cart;

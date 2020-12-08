@@ -8,6 +8,7 @@ import { useState } from "react";
 function SingleProductPage(props) {
   const [Single, SetSingle] = useState([]);
   useEffect(() => {
+    window.scrollTo(0, 0);
     getSingleProduct(props.match.params.id);
   }, []);
   const getSingleProduct = async (id) => {

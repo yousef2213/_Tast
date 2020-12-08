@@ -79,7 +79,7 @@ function Navbar() {
             <nav className="navbar navbar-expand-lg navbar-light Nav">
               <h5 className="navbar-brand font-main Sections mr-0 my-0 py-0 C_p awl d-flex" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <BsList className="listicon text-white text-right ml-auto mr-2 d-block d-md-none my-2" />
-                <li className="nav-item navlink_dropdown dropdown d-none d-md-block">
+                <div className="nav-item navlink_dropdown dropdown d-none d-md-block">
                   <a className="nav-link navlink_dropdown_a dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <BsList className="listicon text-white" />
                     الاقسام
@@ -122,6 +122,7 @@ function Navbar() {
                               </li>
                         </ul>
                       </li>
+
                       <li>
                         <Link className="dropdown-item dropdown-toggle navlink_dropdown_a_2" onClick={() => setTest(53)} to={`/category/${"Cameras &amp; Photography"}`}>
                           Cameras &amp; Photography
@@ -149,11 +150,13 @@ function Navbar() {
                               </li>
                         </ul>
                       </li>
+
                       <li>
                         <Link className="dropdown-item dropdown-toggle navlink_dropdown_a_2" onClick={() => setTest(54)} to={`/category/${"Car Electronic &amp; GPS"}`}>
                           Car Electronic &amp; GPS
                         </Link>
                       </li>
+
                       <li>
                         <Link className="dropdown-item dropdown-toggle navlink_dropdown_a_2" onClick={() => setTest(59)} to={`/category/${"Computer Components"}`}>
                           Computer Components
@@ -181,11 +184,13 @@ function Navbar() {
                               </li>
                         </ul>
                       </li>
+
                       <li>
                         <Link className="dropdown-item dropdown-toggle navlink_dropdown_a_2" onClick={() => setTest(62)} to={`/category/${"Ending Offers"}`}>
                           Ending Offers
                         </Link>
                       </li>
+
                       <li>
                         <Link className="dropdown-item dropdown-toggle navlink_dropdown_a_2" onClick={() => setTest(64)} to={`/category/${"Gadgets"}`}>
                           Gadgets
@@ -208,11 +213,13 @@ function Navbar() {
                               </li>
                         </ul>
                       </li>
+
                       <li>
                         <Link className="dropdown-item dropdown-toggle navlink_dropdown_a_2" onClick={() => setTest(66)} to={`/category/${"Gadgets &amp; Accesories"}`}>
                           Gadgets &amp; Accesories
                         </Link>
                       </li>
+
                       <li>
                         <Link className="dropdown-item dropdown-toggle navlink_dropdown_a_2" onClick={() => setTest(70)} to={`/category/${"GPS &amp; Navi"}`}>
                           GPS &amp; Navi
@@ -235,6 +242,7 @@ function Navbar() {
                               </li>
                         </ul>
                       </li>
+
                       <li>
                         <Link className="dropdown-item dropdown-toggle navlink_dropdown_a_2" onClick={() => setTest(75)} to={`/category/${"Home Entertainment"}`}>
                           Home Entertainment
@@ -358,7 +366,7 @@ function Navbar() {
                       })}
                     </div>
                   </div>
-                </li>
+                </div>
               </h5>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mx-auto">

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../components/Hero";
 import Hero2 from "../components/Hero2";
 import Products from "../components/Products";
 
 function Merchants() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container-fluid mx-0 px-0 py-5">
       <div className="row mx-0 px-0">

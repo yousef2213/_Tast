@@ -1,10 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { BsFillStarFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { QafeerContext } from "../context/context";
 import loading from "../images/loading.svg"
 function CategoryById() {
   const { CategoryListId ,setCategoryById } = useContext(QafeerContext);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   if (CategoryListId.length === 0) {
     return (
       <div className="container mx-auto px-0 my-3">
